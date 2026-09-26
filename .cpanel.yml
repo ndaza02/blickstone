@@ -5,9 +5,8 @@
 # would also publish README.md at https://your-domain/README.md — that file
 # documents known gaps in the site and is not for public reading.
 #
-# $HOME resolves to the cPanel account's home directory, so this needs no
-# username. If your host does not set it, replace with an absolute path:
-#   export DEPLOYPATH=/home/YOUR_CPANEL_USER/public_html/
+# $HOME resolves to the cPanel account's home directory. The fallback is this
+# account's absolute path, in case the deployment environment does not set it.
 #
 # Deploying to an addon domain or subdomain instead? Point DEPLOYPATH at its
 # own document root, e.g.:
@@ -17,7 +16,7 @@
 # from the repo, delete it from the server by hand.
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/
+    - export DEPLOYPATH=${HOME:-/home/blicksto}/public_html/
     - /bin/mkdir -p "$DEPLOYPATH/assets"
     - /bin/cp -R assets/. "$DEPLOYPATH/assets/"
     - /bin/cp *.html "$DEPLOYPATH"
