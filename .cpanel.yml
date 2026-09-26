@@ -1,0 +1,23 @@
+---
+# cPanel Git Version Control deployment.
+#
+# Copies only the site itself. The usual recipe is "cp -R * $DEPLOYPATH", which
+# would also publish README.md at https://your-domain/README.md — that file
+# documents known gaps in the site and is not for public reading.
+#
+# $HOME resolves to the cPanel account's home directory, so this needs no
+# username. If your host does not set it, replace with an absolute path:
+#   export DEPLOYPATH=/home/YOUR_CPANEL_USER/public_html/
+#
+# Deploying to an addon domain or subdomain instead? Point DEPLOYPATH at its
+# own document root, e.g.:
+#   export DEPLOYPATH=$HOME/public_html/blickstone.co.zw/
+#
+# Note: this copies and overwrites, it does not delete. If you remove a page
+# from the repo, delete it from the server by hand.
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/mkdir -p "$DEPLOYPATH/assets"
+    - /bin/cp -R assets/. "$DEPLOYPATH/assets/"
+    - /bin/cp *.html "$DEPLOYPATH"
