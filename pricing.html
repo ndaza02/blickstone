@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing &amp; Payment Plans | BlickStone Private Limited</title>
+    <meta name="description"
+        content="How BlickStone prices construction work: a professional Bill of Quantities after a site visit, deposits tiered from 50% down to 30% by project size, and the balance spread over 12-24 months linked to progress.">
+
+    <link rel="icon" href="assets/images/blickstone-mark.png" type="image/png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-blick-offWhite text-blick-ink font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3" aria-label="BlickStone Private Limited home">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-10 h-10 object-contain" width="375"
+                    height="335">
+                <span class="font-extrabold text-lg md:text-xl tracking-tight leading-none">
+                    <span class="text-blick-navy">BLICK</span><span class="text-blick-red">STONE</span>
+                    <span class="block text-[9px] font-medium tracking-[0.25em] text-blick-gray mt-0.5">PRIVATE
+                        LIMITED</span>
+                </span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-blick-gray">
+                <a href="index.html" class="hover:text-blick-navy transition">Home</a>
+                <a href="construction.html" class="hover:text-blick-navy transition">Construction</a>
+                <a href="marketing.html" class="hover:text-blick-navy transition">Marketing</a>
+                <a href="sentinel.html" class="hover:text-blick-navy transition">Sentinel</a>
+                <a href="pricing.html" class="text-blick-navy font-bold transition">Pricing</a>
+                <a href="index.html#contact" class="hover:text-blick-navy transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="inquiry.siteVisit()"
+                    class="hidden md:block px-7 py-3 bg-blick-red text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-darkRed transition">
+                    Request a Quote
+                </button>
+                <button type="button" id="nav-toggle" class="p-2 lg:hidden" aria-expanded="false"
+                    aria-controls="nav-mobile" aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6 text-blick-navy"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="nav-mobile"
+            class="hidden lg:hidden mt-6 bg-white rounded-2xl border border-blick-steel p-4 flex flex-col gap-1 text-sm font-medium">
+            <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Home</a>
+            <a href="construction.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Construction</a>
+            <a href="marketing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Marketing</a>
+            <a href="sentinel.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Sentinel</a>
+            <a href="pricing.html" class="px-4 py-3 rounded-xl bg-blick-offWhite text-blick-navy font-bold">Pricing</a>
+            <a href="index.html#contact" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 pb-20">
+
+        <!-- Page Header -->
+        <header class="pt-14 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <div class="lg:col-span-7">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-5 block">Pricing</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-blick-navy leading-tight mb-8">
+                    We don't publish a price&nbsp;list.<br>We publish how we&nbsp;price.
+                </h1>
+                <p class="text-lg text-blick-gray max-w-2xl leading-relaxed mb-6">
+                    Two houses on the same street can differ by thousands, because the ground, the span, the finishes
+                    and what is already standing are never the same. A rate card would be a guess dressed up as a
+                    number.
+                </p>
+                <p class="text-lg text-blick-ink max-w-2xl leading-relaxed font-medium">
+                    So we cost every project from a professional Bill of Quantities, and we are completely open about
+                    the part we <em>can</em> publish: what you pay to start, and how the balance is spread.
+                </p>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-blick-deep rounded-[2.5rem] p-8 md:p-10 text-white">
+                    <div class="w-12 h-12 rounded-full bg-blick-red flex items-center justify-center mb-6">
+                        <i data-lucide="receipt-text" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="text-xl font-bold mb-6">What is fixed and published</h2>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                            <span>Deposit percentages, tiered by project size &mdash; from 50% down to 30%</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                            <span>Balance spread over 12&ndash;24 months, in stages linked to progress</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                            <span>Every quotation itemised, so you see what each line costs</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                            <span>A signed contract before any work starts</span>
+                        </li>
+                    </ul>
+                    <a href="#calculator"
+                        class="mt-8 w-full bg-white text-blick-navy py-3.5 rounded-full text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-blick-offWhite transition-colors">
+                        Work out your deposit
+                        <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- How a price is produced -->
+        <section class="mb-28">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">How A Price Is
+                    Produced</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">Three steps between your
+                    enquiry and a real number.</h2>
+                <p class="text-blick-gray">Nobody can price your project over the phone. What we can do is get you to a
+                    properly costed figure quickly, and charge you nothing for the quotation itself.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-5">01</span>
+                    <h3 class="font-bold text-blick-navy mb-3">Site visit &amp; assessment</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">We walk the site, measure what is there and
+                        establish the real scope of work &mdash; including the things that only show up in person.</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-blick-red">Site visit fee applies</p>
+                    <p class="text-xs text-blick-gray mt-1">Deducted from your project cost once you confirm.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-5">02</span>
+                    <h3 class="font-bold text-blick-navy mb-3">Bill of Quantities</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Our Quantity Surveyor measures every item of
+                        work and materials, and prices it. This is the document a real cost is built on.</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-blick-navy">Prepared by our QS</p>
+                    <p class="text-xs text-blick-gray mt-1">Yours to keep, and to compare against other builders.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-5">03</span>
+                    <h3 class="font-bold text-blick-navy mb-3">Itemised quotation</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">You get a clear, line-by-line quotation with
+                        the deposit and payment schedule set out, before anything is signed.</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-blick-navy">No obligation</p>
+                    <p class="text-xs text-blick-gray mt-1">Take it away and think about it.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit tiers -->
+        <section id="deposits" class="mb-28 scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Deposits</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-6">The bigger the
+                        project, the smaller the deposit.</h2>
+                    <p class="text-blick-gray leading-relaxed mb-6">
+                        That runs opposite to what most people expect, and it is deliberate. A large project carries
+                        enough structure &mdash; stages, inspections, a long contract &mdash; that we can carry more of
+                        it with you. A small job is over before a payment plan would mean anything.
+                    </p>
+                    <p class="text-sm text-blick-gray leading-relaxed">
+                        We confirm which band your project falls into when the Bill of Quantities is priced, so you are
+                        never guessing which row applies to you.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white border border-blick-steel rounded-[2.5rem] p-6 md:p-10">
+                        <table class="w-full text-left">
+                            <caption class="sr-only">Deposit required by project size</caption>
+                            <thead>
+                                <tr class="text-[11px] font-bold uppercase tracking-widest text-blick-gray">
+                                    <th scope="col" class="pb-4">Project Size</th>
+                                    <th scope="col" class="pb-4 text-right">Deposit</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-blick-steel">
+                                <tr>
+                                    <th scope="row" class="py-5 font-medium text-blick-ink">Small projects</th>
+                                    <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">50%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="py-5 font-medium text-blick-ink">Medium projects</th>
+                                    <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">40%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="py-5 font-medium text-blick-ink">Large projects</th>
+                                    <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-red">
+                                        30&ndash;35%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="py-5 font-medium text-blick-ink">Residential durawall</th>
+                                    <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">30%
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="mt-8 pt-8 border-t border-blick-steel">
+                            <p class="text-sm text-blick-ink font-medium mb-2">Then the balance.</p>
+                            <p class="text-sm text-blick-gray leading-relaxed">
+                                Payable over 12&ndash;24 months, structured in stages tied to progress on site &mdash;
+                                so what you pay tracks what has actually been built. The schedule is set out in your
+                                contract before you sign.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator -->
+        <section id="calculator" class="mb-28 scroll-mt-24">
+            <div class="bg-blick-deep rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="max-w-2xl mb-12">
+                        <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Deposit
+                            Calculator</span>
+                        <h2 class="text-3xl md:text-5xl font-bold mb-5 leading-tight">See what starting would cost.</h2>
+                        <p class="text-white/70 leading-relaxed">
+                            If you have a budget or a figure from another builder, put it in. This applies our published
+                            deposit percentages to your number &mdash; it does not estimate what your project costs.
+                            Only a Bill of Quantities can do that.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                        <!-- Inputs -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <div>
+                                <label for="calc-value"
+                                    class="block text-xs font-bold uppercase tracking-widest text-white/60 mb-3">Project
+                                    value (US$)</label>
+                                <input type="text" inputmode="numeric" id="calc-value" placeholder="e.g. 25 000"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl p-4 text-xl font-bold text-white placeholder:text-white/30 placeholder:font-normal placeholder:text-base focus:ring-2 focus:ring-blick-blue focus:border-transparent outline-none">
+                                <p class="text-xs text-white/50 mt-2">Your figure, not ours &mdash; a budget, or a
+                                    quotation you are comparing.</p>
+                            </div>
+
+                            <div>
+                                <label for="calc-tier"
+                                    class="block text-xs font-bold uppercase tracking-widest text-white/60 mb-3">Project
+                                    size</label>
+                                <select id="calc-tier"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl p-4 font-medium text-white focus:ring-2 focus:ring-blick-blue focus:border-transparent outline-none">
+                                    <option class="text-blick-ink" value="small">Small project &mdash; 50%</option>
+                                    <option class="text-blick-ink" value="medium" selected>Medium project &mdash; 40%
+                                    </option>
+                                    <option class="text-blick-ink" value="large">Large project &mdash; 30&ndash;35%
+                                    </option>
+                                    <option class="text-blick-ink" value="durawall">Residential durawall &mdash; 30%
+                                    </option>
+                                </select>
+                                <p class="text-xs text-white/50 mt-2">We confirm your band at BOQ stage.</p>
+                            </div>
+
+                            <div>
+                                <label for="calc-term"
+                                    class="block text-xs font-bold uppercase tracking-widest text-white/60 mb-3">Balance
+                                    spread over</label>
+                                <select id="calc-term"
+                                    class="w-full bg-white/10 border border-white/20 rounded-xl p-4 font-medium text-white focus:ring-2 focus:ring-blick-blue focus:border-transparent outline-none">
+                                    <option class="text-blick-ink" value="12">12 months</option>
+                                    <option class="text-blick-ink" value="18" selected>18 months</option>
+                                    <option class="text-blick-ink" value="24">24 months</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Results -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-white/5 border border-white/10 rounded-[2rem] p-8 md:p-10 h-full flex flex-col">
+
+                                <div id="calc-empty" class="flex-1 flex flex-col items-center justify-center text-center py-12">
+                                    <div
+                                        class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-5 text-white/40">
+                                        <i data-lucide="calculator" class="w-8 h-8"></i>
+                                    </div>
+                                    <p class="text-white/60 text-sm">Enter a project value to see the deposit and how
+                                        the balance breaks down.</p>
+                                </div>
+
+                                <div id="calc-result" class="hidden flex-1 flex flex-col">
+                                    <div class="mb-8">
+                                        <span
+                                            class="block text-[10px] font-bold uppercase tracking-widest text-white/50 mb-2">Deposit
+                                            to start</span>
+                                        <span id="calc-deposit"
+                                            class="block text-4xl md:text-5xl font-extrabold text-blick-red leading-none mb-2">&mdash;</span>
+                                        <span id="calc-deposit-pct" class="block text-sm text-white/60"></span>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
+                                        <div>
+                                            <span
+                                                class="block text-[10px] font-bold uppercase tracking-widest text-white/50 mb-2">Balance</span>
+                                            <span id="calc-balance"
+                                                class="block text-xl md:text-2xl font-bold text-white">&mdash;</span>
+                                        </div>
+                                        <div>
+                                            <span
+                                                class="block text-[10px] font-bold uppercase tracking-widest text-white/50 mb-2">Roughly
+                                                per month</span>
+                                            <span id="calc-monthly"
+                                                class="block text-xl md:text-2xl font-bold text-white">&mdash;</span>
+                                            <span id="calc-term-label" class="block text-xs text-white/50 mt-1"></span>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-xs text-white/50 leading-relaxed mt-8 pt-6 border-t border-white/10">
+                                        The monthly figure is the balance divided evenly, shown to give you a feel for
+                                        the commitment. Real payments are stage payments tied to progress on site, so
+                                        they will not all be the same size. An admin and documentation fee applies at
+                                        contract stage and is confirmed in your quotation.
+                                    </p>
+
+                                    <button type="button" onclick="inquiry.siteVisit()"
+                                        class="mt-8 w-full bg-blick-red text-white py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-blick-darkRed transition-colors flex items-center justify-center gap-3">
+                                        <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                        Get this costed properly
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="mt-10 text-xs text-white/40 max-w-3xl leading-relaxed">
+                        This calculator is not a quotation and creates no agreement. It applies published deposit
+                        percentages to a figure you supply. Your actual project cost, deposit band and payment schedule
+                        are confirmed in writing after a site visit and Bill of Quantities.
+                    </p>
+                </div>
+
+                <div
+                    class="absolute top-[-30%] right-[-10%] w-[700px] h-[700px] rounded-full bg-blick-navy blur-[120px] opacity-40 pointer-events-none">
+                </div>
+            </div>
+        </section>
+
+        <!-- What moves the price -->
+        <section class="mb-28">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">What Moves The
+                    Price</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">Why two similar-looking
+                    jobs quote differently.</h2>
+                <p class="text-blick-gray">Worth knowing before you compare quotations &mdash; from us or anyone else.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="ruler" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">Scope and size</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Floor area, number of rooms, spans and storeys.
+                        The single biggest driver, and the one most people underestimate.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="mountain" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">Ground and site conditions</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Rock, poor soil, slope or drainage problems can
+                        change foundation costs substantially. This is what a site visit is really for.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">Materials and finishes</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">The same house in different tiles, roofing and
+                        fittings is a different price. Your BOQ prices the specification you actually choose.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="hammer" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">What is already standing</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">On an incomplete house, the condition of existing
+                        work decides how much can be built on and how much has to be corrected first.</p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="truck" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">Access and location</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">How easily materials and people reach the site,
+                        and how far it is from Bulawayo. Travel is priced into the quotation, not sprung on you later.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center mb-6 text-blick-navy">
+                        <i data-lucide="file-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-blick-navy mb-3">Approvals and documentation</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Plans, project registration and the paperwork a
+                        compliant build needs. We handle it; the cost of it appears as its own line.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fees -->
+        <section class="mb-28">
+            <div class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-12">
+                <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+                    <div>
+                        <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-3 block">Fees</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-blick-navy leading-tight">Two charges that are
+                            not part of the build.</h2>
+                    </div>
+                    <p class="text-sm text-blick-gray max-w-md lg:text-right">Both are confirmed in writing before you
+                        pay anything. Neither is a surprise on an invoice.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border-t-2 border-blick-red pt-6">
+                        <h3 class="font-bold text-blick-navy mb-3">Site visit fee</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed mb-4">Charged per visit, and it covers our
+                            time and travel to come and assess your site properly rather than guess from a phone call.
+                        </p>
+                        <p class="text-sm font-medium text-blick-ink">Deducted from your project cost once you confirm
+                            the project &mdash; so if you proceed with us, it costs you nothing in the end.</p>
+                    </div>
+
+                    <div class="border-t-2 border-blick-navy pt-6">
+                        <h3 class="font-bold text-blick-navy mb-3">Admin &amp; documentation fee</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed mb-4">Applies at contract stage and covers
+                            preparing the agreement, the project documentation and registration.</p>
+                        <p class="text-sm font-medium text-blick-ink">Set out in your quotation before signature, so you
+                            see it alongside everything else.</p>
+                    </div>
+                </div>
+
+                <p class="mt-8 pt-6 border-t border-blick-steel text-sm text-blick-gray">
+                    We confirm both amounts when you enquire &mdash; they depend on where your site is and the scale of
+                    the contract. <button type="button" onclick="inquiry.siteVisit()"
+                        class="text-blick-navy font-bold underline hover:text-blick-red transition-colors">Ask us for
+                        the current figures</button>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Other divisions -->
+        <section class="mb-28">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-blue shrink-0">
+                            <i data-lucide="megaphone" class="w-6 h-6"></i>
+                        </div>
+                        <h2 class="font-bold text-xl text-blick-navy">Marketing</h2>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-6">
+                        Priced against the brief rather than a deposit tier &mdash; a campaign, a retainer or a one-off
+                        piece of work are three different shapes of cost. Tell us the outcome you need and we will scope
+                        it.
+                    </p>
+                    <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                        class="w-full border border-blick-steel text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-navy hover:text-white hover:border-blick-navy transition-colors">
+                        Get a Marketing Quote
+                    </button>
+                    <a href="marketing.html"
+                        class="mt-3 block text-center text-xs font-bold uppercase tracking-widest text-blick-navy hover:text-blick-red transition-colors">
+                        See what Marketing does
+                    </a>
+                </div>
+
+                <div class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h2 class="font-bold text-xl text-blick-navy">Sentinel Group</h2>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-6">
+                        Quoted on cover: what needs protecting, over what hours, for how long. A single event and an
+                        ongoing premises arrangement are priced quite differently.
+                    </p>
+                    <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                        class="w-full border border-blick-steel text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-navy hover:text-white hover:border-blick-navy transition-colors">
+                        Get a Sentinel Quote
+                    </button>
+                    <a href="sentinel.html"
+                        class="mt-3 block text-center text-xs font-bold uppercase tracking-widest text-blick-navy hover:text-blick-red transition-colors">
+                        See what Sentinel does
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mb-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+              <div class="lg:col-span-4">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Questions</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">The things people ask
+                    before they commit.</h2>
+                <p class="text-sm text-blick-gray leading-relaxed">Still unsure about something?
+                    <button type="button" onclick="inquiry.siteVisit()"
+                        class="text-blick-navy font-bold underline hover:text-blick-red transition-colors">Ask us
+                        directly</button> &mdash; we would rather answer it now than after you have signed.
+                </p>
+              </div>
+
+              <div class="lg:col-span-8 space-y-4">
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>Why won't you just tell me a price per square metre?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        Because a rate per square metre hides everything that actually varies &mdash; foundations,
+                        finishes, access, what is already built. A number given over the phone is either padded to be
+                        safe or too low to hold, and both end badly. The BOQ exists so you get a figure that survives
+                        contact with the site.
+                    </p>
+                </details>
+
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>Is the quotation free?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        The quotation itself is, and comes with no obligation. The site visit that makes it possible
+                        carries a fee, which is deducted from your project cost when you confirm the project &mdash; so
+                        if you build with us, you are not out of pocket for it.
+                    </p>
+                </details>
+
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>Can I supply my own materials?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        Often yes, and the BOQ separates labour from materials so you can see exactly what you would be
+                        taking on. Raise it at site visit stage and we will price it both ways, so you can compare.
+                    </p>
+                </details>
+
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>What happens if the scope changes mid-project?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        Changes are priced and agreed in writing before the work is done, against the original BOQ. You
+                        will not find out about extra cost after the fact &mdash; that is the point of working from an
+                        itemised document.
+                    </p>
+                </details>
+
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>Do you price for tenders and public projects?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        Yes. We are registered with the Procurement Regulatory Authority of Zimbabwe under category
+                        SC006 &mdash; Construction and Civil Works &mdash; so we can be engaged on public procurement
+                        work, and we prepare BOQs and tender pricing for other contractors as a service in its own
+                        right.
+                    </p>
+                </details>
+
+                <details class="group bg-white border border-blick-steel rounded-[1.5rem] p-6 md:p-7">
+                    <summary
+                        class="flex items-center justify-between gap-4 cursor-pointer font-bold text-blick-navy list-none">
+                        <span>Can I get just the BOQ, without you doing the build?</span>
+                        <i data-lucide="plus"
+                            class="w-5 h-5 text-blick-red shrink-0 transition-transform group-open:rotate-45"></i>
+                    </summary>
+                    <p class="text-sm text-blick-gray leading-relaxed mt-4">
+                        Yes &mdash; quantity surveying and BOQ preparation is a service we sell on its own, priced as a
+                        professional fee. Plenty of clients use it to sanity-check quotations they have received
+                        elsewhere.
+                    </p>
+                </details>
+              </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-blick-navy rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <div class="w-14 h-14 rounded-2xl bg-blick-red flex items-center justify-center mb-8 rotate-3">
+                    <i data-lucide="file-text" class="w-7 h-7"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Get a real number.</h2>
+                <p class="text-white/75 text-lg mb-10 leading-relaxed">
+                    Tell us what you are building and where. We will arrange the site visit, price the Bill of
+                    Quantities and come back with an itemised quotation you can actually plan around.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button type="button" onclick="inquiry.siteVisit()"
+                        class="bg-blick-red hover:bg-blick-darkRed text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Book a Site Visit
+                    </button>
+                    <a href="construction.html"
+                        class="border border-white/30 text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-blick-navy transition-all inline-flex items-center justify-center">
+                        Build a Project Brief
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-[-40%] right-[-10%] w-[700px] h-[700px] rounded-full bg-blick-deep blur-[120px] opacity-60 pointer-events-none">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-blick-steel">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blick-gray">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-7 h-7 object-contain">
+                <span class="font-extrabold"><span class="text-blick-navy">BLICK</span><span
+                        class="text-blick-red">STONE</span></span>
+            </a>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                <a href="tel:+263717739949" class="hover:text-blick-navy">+263 71 773 9949</a>
+                <a href="mailto:construction@blickstone.co.zw"
+                    class="hover:text-blick-navy">construction@blickstone.co.zw</a>
+                <span class="text-blick-navy font-medium">Bulawayo &amp; nationwide</span>
+            </div>
+
+            <div class="text-center md:text-right">
+                <span class="block">Built on service. Driven by quality. Focused on trust.</span>
+                <span class="block text-xs mt-1">Reg. No. 379/2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/blickstone.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inquiry-utils.js"></script>
+    <script src="assets/js/deposit-calculator.js"></script>
+</body>
+
+</html>

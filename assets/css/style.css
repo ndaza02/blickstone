@@ -1,6 +1,6 @@
 .hero-title {
     line-height: 1;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.04em;
     font-weight: 800;
 }
 
@@ -9,9 +9,10 @@
 }
 
 .glass-panel {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(6, 20, 38, 0.55);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .pill-badge {
@@ -23,6 +24,28 @@
     gap: 0.5rem;
     font-size: 0.8rem;
     font-weight: 600;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-    color: #1a1a1a;
+    box-shadow: 0 10px 25px -5px rgba(6, 20, 38, 0.25);
+    color: #0B2F6B;
+}
+
+/* Red underscore used beneath section eyebrows, echoing the profile documents */
+.brand-rule::after {
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-top: 0.75rem;
+    background: #E21B23;
+    border-radius: 2px;
+}
+
+/* Diagonal navy/red wedge from the printed collateral */
+.wedge-accent {
+    background-image: linear-gradient(115deg, #E21B23 0 6px, #0072CE 6px 12px, transparent 12px);
+}
+
+/* Numbered process steps */
+.step-number {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.06em;
 }

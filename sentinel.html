@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Group | BlickStone Private Limited</title>
+    <meta name="description"
+        content="BlickStone Sentinel Group provides security and protection-focused support in Bulawayo and across Zimbabwe: property monitoring, event security assistance, business premises support, and site supervision and safety checks.">
+
+    <link rel="icon" href="assets/images/blickstone-mark.png" type="image/png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-blick-offWhite text-blick-ink font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3" aria-label="BlickStone Private Limited home">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-10 h-10 object-contain" width="375"
+                    height="335">
+                <span class="font-extrabold text-lg md:text-xl tracking-tight leading-none">
+                    <span class="text-blick-navy">BLICK</span><span class="text-blick-red">STONE</span>
+                    <span class="block text-[9px] font-medium tracking-[0.25em] text-blick-gray mt-0.5">PRIVATE
+                        LIMITED</span>
+                </span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-blick-gray">
+                <a href="index.html" class="hover:text-blick-navy transition">Home</a>
+                <a href="construction.html" class="hover:text-blick-navy transition">Construction</a>
+                <a href="marketing.html" class="hover:text-blick-navy transition">Marketing</a>
+                <a href="sentinel.html" class="text-blick-navy font-bold transition">Sentinel</a>
+                <a href="pricing.html" class="hover:text-blick-navy transition">Pricing</a>
+                <a href="index.html#contact" class="hover:text-blick-navy transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                    class="hidden md:block px-7 py-3 bg-blick-red text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-darkRed transition">
+                    Discuss Cover
+                </button>
+                <button type="button" id="nav-toggle" class="p-2 lg:hidden" aria-expanded="false"
+                    aria-controls="nav-mobile" aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6 text-blick-navy"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="nav-mobile"
+            class="hidden lg:hidden mt-6 bg-white rounded-2xl border border-blick-steel p-4 flex flex-col gap-1 text-sm font-medium">
+            <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Home</a>
+            <a href="construction.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Construction</a>
+            <a href="marketing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Marketing</a>
+            <a href="sentinel.html" class="px-4 py-3 rounded-xl bg-blick-offWhite text-blick-navy font-bold">Sentinel</a>
+            <a href="pricing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Pricing</a>
+            <a href="index.html#contact" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 pb-20">
+
+        <!-- Hero -->
+        <header class="pt-14 mb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-5 block">BlickStone Sentinel
+                    Group</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-blick-navy leading-tight mb-8">
+                    The point of security<br>is that nothing<br>happens.
+                </h1>
+                <p class="text-lg text-blick-gray max-w-2xl leading-relaxed mb-6">
+                    Sentinel Group is our security and protection-focused division, supporting properties, events,
+                    business premises and sites through disciplined monitoring and safety support.
+                </p>
+                <p class="text-lg text-blick-ink max-w-2xl leading-relaxed font-medium mb-10">
+                    Quiet, consistent presence and people who actually turn up. That is most of the job, and it is the
+                    part that is hardest to buy reliably.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                        class="bg-blick-navy hover:bg-blick-deep text-white px-9 py-5 rounded-full flex items-center gap-4 transition-all group">
+                        <span class="font-bold text-sm tracking-widest uppercase">Discuss Your Cover</span>
+                        <span
+                            class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </button>
+                    <a href="#services"
+                        class="border border-blick-navy text-blick-navy px-9 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blick-navy hover:text-white transition-all">
+                        See the Services
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-blick-deep rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-full bg-blick-red flex items-center justify-center mb-8">
+                            <i data-lucide="shield-check" class="w-7 h-7"></i>
+                        </div>
+                        <h2 class="text-xl font-bold mb-6">What we cover</h2>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                                <span>Properties standing empty, under construction or between tenants</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                                <span>Events that need order kept without a heavy atmosphere</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                                <span>Business premises needing a consistent daily presence</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>
+                                <span>Construction sites holding materials worth stealing</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="absolute bottom-[-30%] right-[-20%] w-72 h-72 rounded-full bg-blick-red blur-[90px] opacity-25 pointer-events-none">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services -->
+        <section id="services" class="mb-28 scroll-mt-24">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">Five kinds of cover.</h2>
+                <p class="text-blick-gray">Arrangements are built around what you actually need watched, and for how
+                    long &mdash; a single evening and a standing weekly presence are different jobs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-navy transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-navy">
+                        <i data-lucide="home" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Property monitoring &amp; security support</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Keeping an eye on properties that
+                        would otherwise sit unwatched &mdash; empty houses, stands, buildings between tenants and homes
+                        whose owners are away.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">SN-001</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Property monitoring &amp; security support', 'SN-001', 'Sentinel Group')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about property monitoring and security support">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-navy transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-navy">
+                        <i data-lucide="party-popper" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Event security assistance</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Support at gatherings, functions and
+                        community events &mdash; access points, crowd flow and keeping things calm, without the
+                        atmosphere turning heavy-handed.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">SN-002</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Event security assistance', 'SN-002', 'Sentinel Group')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about event security assistance">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-navy transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-navy">
+                        <i data-lucide="building-2" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Business premises support</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">A consistent presence at shops,
+                        offices, yards and warehouses &mdash; the ordinary daily cover that makes a premises feel
+                        looked after rather than available.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">SN-003</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Business premises support', 'SN-003', 'Sentinel Group')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about business premises support">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-navy transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-navy">
+                        <i data-lucide="clipboard-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Site supervision &amp; safety checks</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Oversight on active sites: who is on
+                        site, whether materials are where they should be, and whether the basic safety disciplines are
+                        being kept.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">SN-004</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Site supervision &amp; safety checks', 'SN-004', 'Sentinel Group')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about site supervision and safety checks">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-navy transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-navy">
+                        <i data-lucide="shield" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Protection-focused operational support</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">The arrangements that do not fit a
+                        standard category &mdash; a delivery that needs watching, a handover period, a short window
+                        where something valuable is exposed.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">SN-005</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Protection-focused operational support', 'SN-005', 'Sentinel Group')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about protection-focused operational support">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-blick-navy rounded-[2rem] p-8 flex flex-col justify-between text-white">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center mb-7">
+                            <i data-lucide="message-circle-question" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3">Something else you need watched?</h3>
+                        <p class="text-sm text-white/70 leading-relaxed mb-6">Tell us what the risk is, where it is and
+                            over what hours. We will be straight with you about whether we are the right fit for it.</p>
+                    </div>
+                    <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                        class="w-full bg-white text-blick-navy py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-offWhite transition-colors">
+                        Describe the Risk
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Construction tie-in -->
+        <section class="mb-28">
+            <div class="bg-blick-deep rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Sites We
+                            Already Know</span>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">A building site is a store of
+                            valuable things in an open field.</h2>
+                        <p class="text-white/75 leading-relaxed mb-6">
+                            Cement, timber, roofing sheets, tools. Most of it is portable and none of it is nailed down
+                            until the build is finished. Losses on site do not just cost the replacement &mdash; they
+                            stop the programme while you wait for it.
+                        </p>
+                        <p class="text-white/75 leading-relaxed mb-8">
+                            Because Sentinel sits inside the same company as our construction division, we understand
+                            what is on a site, when it is most exposed, and what should be there at any given stage.
+                        </p>
+                        <a href="construction.html"
+                            class="inline-flex items-center gap-3 bg-white text-blick-navy px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-blick-offWhite transition-colors group">
+                            See our construction work
+                            <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <figure class="relative rounded-[2rem] overflow-hidden border-2 border-white/10">
+                        <img src="assets/images/site-walling-wide.jpg"
+                            alt="A BlickStone construction site with brickwork in progress and materials stacked on the ground"
+                            class="w-full h-80 md:h-[420px] object-cover object-top" loading="lazy" width="825"
+                            height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blick-deep via-blick-deep/90 to-transparent px-6 pt-16 pb-6">
+                            <span class="block text-sm font-medium leading-snug">A live BlickStone site. Bricks,
+                                timber, scaffolding &mdash; all of it worth something to somebody.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div
+                    class="absolute top-[-30%] right-[-10%] w-[700px] h-[700px] rounded-full bg-blick-navy blur-[120px] opacity-40 pointer-events-none">
+                </div>
+            </div>
+        </section>
+
+        <!-- How we work -->
+        <section class="mb-28">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">How We Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">The same four steps we use
+                    on every assignment.</h2>
+                <p class="text-blick-gray">Security arrangements fail when nobody wrote down what was being covered.
+                    This is how we avoid that.</p>
+            </div>
+
+            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">01</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Understand the need</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">What is being protected, from what, and what has
+                        already gone wrong before.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">02</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Plan the work</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Scope, hours, people and approach agreed before
+                        anyone is posted anywhere.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">03</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Execute professionally</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Discipline, communication and attention to
+                        detail. Turning up, on time, every time.</p>
+                </li>
+                <li class="bg-blick-red text-white rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-white/25 mb-4">04</span>
+                    <h3 class="font-bold mb-2">Review and improve</h3>
+                    <p class="text-sm text-white/85 leading-relaxed">We assess how the arrangement is working, address
+                        concerns and adjust the cover.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Pricing -->
+        <section class="mb-28">
+            <div class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-7">
+                        <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-3 block">What It
+                            Costs</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-blick-navy leading-tight mb-5">Quoted on cover,
+                            not on a deposit tier.</h2>
+                        <p class="text-blick-gray leading-relaxed mb-4">
+                            What needs protecting, over what hours, for how long. A single evening at an event and a
+                            standing arrangement at a premises are priced completely differently, so there is no useful
+                            rate to publish.
+                        </p>
+                        <p class="text-blick-ink font-medium leading-relaxed">
+                            Tell us the shape of the cover you need and we will quote it in writing, with the scope set
+                            out, before anything starts.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="bg-blick-offWhite rounded-[2rem] p-8">
+                            <ul class="space-y-4 text-sm mb-8">
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i><span>Scope and hours agreed
+                                        in writing first</span></li>
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i><span>One-off, short-term or
+                                        ongoing arrangements</span></li>
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i><span>No obligation to
+                                        proceed after a quote</span></li>
+                            </ul>
+                            <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                                class="w-full bg-blick-navy text-white py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-deep transition-colors">
+                                Get a Sentinel Quote
+                            </button>
+                            <a href="pricing.html"
+                                class="mt-3 block text-center text-xs font-bold uppercase tracking-widest text-blick-navy hover:text-blick-red transition-colors">
+                                How we price across the company
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other divisions -->
+        <section class="mb-28">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">One Company</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight">Three divisions, one
+                    standard.</h2>
+                <p class="text-blick-gray mt-4">Sentinel is one of three. Clients often use more than one &mdash; a
+                    build and the site cover to go with it, or an event and the promotion that fills it.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <a href="construction.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-red transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-red shrink-0">
+                            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Construction</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Residential, commercial, institutional and
+                        industrial construction and project management &mdash; 11 services, priced from a BOQ.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-red transition-colors inline-flex items-center gap-2">
+                        Visit Construction <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="marketing.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-blue transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-blue shrink-0">
+                            <i data-lucide="megaphone" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Marketing</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Brand promotion, strategy support, social
+                        media and content planning, advertising and client engagement campaigns.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-blue transition-colors inline-flex items-center gap-2">
+                        Visit Marketing <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-blick-navy rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <div class="w-14 h-14 rounded-2xl bg-blick-red flex items-center justify-center mb-8 rotate-3">
+                    <i data-lucide="shield-check" class="w-7 h-7"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Tell us what keeps<br>you checking your
+                    phone.</h2>
+                <p class="text-white/75 text-lg mb-10 leading-relaxed">
+                    An empty property, a site full of materials, an event this weekend. Describe the risk and the hours
+                    it matters, and we will come back with what we would put in place.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button type="button" onclick="inquiry.division('BlickStone Sentinel Group')"
+                        class="bg-blick-red hover:bg-blick-darkRed text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Start on WhatsApp
+                    </button>
+                    <a href="index.html#contact"
+                        class="border border-white/30 text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-blick-navy transition-all inline-flex items-center justify-center">
+                        All Contact Details
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="absolute bottom-[-40%] right-[-10%] w-[700px] h-[700px] rounded-full bg-blick-deep blur-[120px] opacity-60 pointer-events-none">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-blick-steel">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blick-gray">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-7 h-7 object-contain">
+                <span class="font-extrabold"><span class="text-blick-navy">BLICK</span><span
+                        class="text-blick-red">STONE</span></span>
+            </a>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                <a href="tel:+263717739949" class="hover:text-blick-navy">+263 71 773 9949</a>
+                <a href="mailto:construction@blickstone.co.zw"
+                    class="hover:text-blick-navy">construction@blickstone.co.zw</a>
+                <span class="text-blick-navy font-medium">Bulawayo &amp; nationwide</span>
+            </div>
+
+            <div class="text-center md:text-right">
+                <span class="block">Built on service. Driven by quality. Focused on trust.</span>
+                <span class="block text-xs mt-1">Reg. No. 379/2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/blickstone.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inquiry-utils.js"></script>
+</body>
+
+</html>

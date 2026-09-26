@@ -5,12 +5,18 @@ tailwind.config = {
                 sans: ['Poppins', 'sans-serif'],
             },
             colors: {
-                spira: {
-                    green: '#7C9B8D',
-                    lightGray: '#D3D7D5',
-                    darkGray: '#4A4A4A',
-                    black: '#1A201C',
-                    offWhite: '#F7F8F7', 
+                // Palette lifted from the BlickStone corporate identity
+                blick: {
+                    navy: '#0B2F6B',     // wordmark navy
+                    deep: '#061426',     // document background navy
+                    midnight: '#0E2948', // panel navy
+                    red: '#E21B23',      // accent red
+                    darkRed: '#C5121B',
+                    blue: '#0072CE',     // secondary blue
+                    steel: '#D9E0E8',
+                    ink: '#17202A',
+                    gray: '#6F7378',
+                    offWhite: '#F3F6F9',
                 }
             },
             borderRadius: {

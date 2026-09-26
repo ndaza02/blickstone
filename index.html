@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Pharmaceuticals | Pharmaceutical Wholesalers</title>
+    <title>BlickStone Private Limited | Marketing, Construction & Sentinel Services</title>
+    <meta name="description"
+        content="BlickStone Private Limited is a Zimbabwean multi-divisional company delivering marketing, construction and sentinel services from Bulawayo, nationwide. PRAZ registered for Construction &amp; Civil Works (SC006). Reg. No. 379/2019.">
+
+    <link rel="icon" href="assets/images/blickstone-mark.png" type="image/png">
 
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Tailwind CSS -->
@@ -22,84 +26,96 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="bg-spira-offWhite text-spira-black font-sans antialiased overflow-x-hidden">
+<body class="bg-blick-offWhite text-blick-ink font-sans antialiased overflow-x-hidden">
 
     <!-- Navigation -->
-    <nav class="max-w-[1440px] mx-auto px-6 md:px-12 py-8 flex items-center justify-between">
-        <div class="flex items-center gap-2 font-bold text-xl tracking-tighter">
-            <div class="w-8 h-8 bg-spira-green rounded-full flex items-center justify-center text-white">
-                <i data-lucide="leaf" class="w-5 h-5"></i>
-            </div>
-            <span>JUST PHARMACEUTICALS</span>
-        </div>
-
-        <div class="hidden lg:flex items-center gap-12 text-sm font-medium text-spira-darkGray">
-            <a href="#" class="text-spira-black font-bold transition">Home</a>
-            <a href="shop.html" class="hover:text-spira-black transition">Wholesale Catalog</a>
-            <a href="#" class="hover:text-spira-black transition">Logistics</a>
-            <a href="#" class="hover:text-spira-black transition">Contact</a>
-        </div>
-
-        <div class="flex items-center gap-6">
-            <a href="#"
-                class="hidden md:block px-8 py-3 border border-spira-green rounded-full text-xs font-bold uppercase tracking-widest hover:bg-spira-green hover:text-white transition">
-                Open Trade Account
+    <header class="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3" aria-label="BlickStone Private Limited home">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-10 h-10 object-contain" width="375"
+                    height="335">
+                <span class="font-extrabold text-lg md:text-xl tracking-tight leading-none">
+                    <span class="text-blick-navy">BLICK</span><span class="text-blick-red">STONE</span>
+                    <span class="block text-[9px] font-medium tracking-[0.25em] text-blick-gray mt-0.5">PRIVATE
+                        LIMITED</span>
+                </span>
             </a>
-            <button class="p-2 lg:hidden">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-blick-gray">
+                <a href="index.html" class="text-blick-navy font-bold transition">Home</a>
+                <a href="construction.html" class="hover:text-blick-navy transition">Construction</a>
+                <a href="marketing.html" class="hover:text-blick-navy transition">Marketing</a>
+                <a href="sentinel.html" class="hover:text-blick-navy transition">Sentinel</a>
+                <a href="pricing.html" class="hover:text-blick-navy transition">Pricing</a>
+                <a href="#contact" class="hover:text-blick-navy transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="inquiry.siteVisit()"
+                    class="hidden md:block px-7 py-3 bg-blick-red text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-darkRed transition">
+                    Request a Quote
+                </button>
+                <button type="button" id="nav-toggle" class="p-2 lg:hidden" aria-expanded="false" aria-controls="nav-mobile"
+                    aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6 text-blick-navy"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="nav-mobile"
+            class="hidden lg:hidden mt-6 bg-white rounded-2xl border border-blick-steel p-4 flex flex-col gap-1 text-sm font-medium">
+            <a href="index.html" class="px-4 py-3 rounded-xl bg-blick-offWhite text-blick-navy font-bold">Home</a>
+            <a href="construction.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Construction</a>
+            <a href="marketing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Marketing</a>
+            <a href="sentinel.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Sentinel</a>
+            <a href="pricing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Pricing</a>
+            <a href="#contact" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Contact</a>
         </div>
-    </nav>
+    </header>
 
     <!-- Main Content -->
-    <main class="max-w-[1440px] mx-auto px-6 md:px-12 pb-12">
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 py-12">
 
         <!-- Hero Section -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-32">
 
             <!-- Left: Visual Column -->
-            <div class="lg:col-span-5 relative h-[500px] lg:h-[780px] rounded-[3rem] overflow-hidden group bg-gray-100">
-                <!-- Main Imagery -->
-                <img id="hero-main-img"
-                    src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000"
-                    alt="Just Pharmaceuticals Distribution Center"
-                    class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105">
+            <div class="lg:col-span-5 relative h-[500px] lg:h-[780px] rounded-[3rem] overflow-hidden group bg-blick-deep">
+                <video id="hero-video" class="w-full h-full object-cover transition-all duration-1000 group-hover:scale-105"
+                    poster="assets/images/hero-cranes-poster.jpg" autoplay muted loop playsinline preload="metadata"
+                    aria-label="Aerial footage of tower cranes silhouetted over a construction site at sunset">
+                    <source src="assets/video/hero-cranes-sunset.mp4" type="video/mp4">
+                    <img src="assets/images/hero-cranes-poster.jpg"
+                        alt="Tower cranes silhouetted over a construction site at sunset"
+                        class="w-full h-full object-cover">
+                </video>
 
                 <!-- Badges -->
-                <div class="absolute top-10 left-10 flex flex-col gap-4">
-                    <div class="flex gap-3">
-                        <div class="pill-badge border border-gray-100">
-                            <i data-lucide="package" class="w-4 h-4 text-spira-green"></i> Bulk Supply
-                        </div>
-                        <div class="pill-badge border border-gray-100">
-                            <i data-lucide="shield-check" class="w-4 h-4 text-spira-green"></i> GMP Certified
-                        </div>
+                <div class="absolute top-8 left-8 right-8 flex flex-wrap gap-3">
+                    <div class="pill-badge">
+                        <i data-lucide="badge-check" class="w-4 h-4 text-blick-red"></i> Reg. 379/2019
                     </div>
-                    <div class="flex gap-3">
-                        <div class="pill-badge border border-gray-100">
-                            <i data-lucide="truck" class="w-4 h-4 text-spira-green"></i> Nationwide
-                        </div>
-                        <div class="pill-badge border border-gray-100">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-spira-green"></i> Regulated
-                        </div>
+                    <div class="pill-badge">
+                        <i data-lucide="landmark" class="w-4 h-4 text-blick-red"></i> PRAZ Registered
                     </div>
                 </div>
 
                 <!-- Glass Overlay Info -->
-                <div class="absolute bottom-10 left-10 right-10 glass-panel p-8 rounded-[2rem] text-white">
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-xl md:text-2xl font-bold tracking-tight uppercase leading-none text-white">500+
-                            Active<br>Pharmacy
-                            Partners
-                        </h3>
-                        <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                <div class="absolute bottom-8 left-8 right-8 glass-panel p-8 rounded-[2rem] text-white">
+                    <div class="flex justify-between items-start mb-4 gap-4">
+                        <h2 class="text-xl md:text-2xl font-bold tracking-tight uppercase leading-none text-white">
+                            Three<br>Divisions.<br>One Standard.
+                        </h2>
+                        <a href="construction.html"
+                            class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0 hover:bg-blick-red transition-colors"
+                            aria-label="View all BlickStone services">
                             <i data-lucide="arrow-up-right" class="w-5 h-5 text-white"></i>
-                        </div>
+                        </a>
                     </div>
-                    <p class="text-xs md:text-sm text-white/90 leading-relaxed font-normal">
-                        We supply major hospitals and retail chains with verified pharmaceutical products, galenicals,
-                        and
-                        medical sundries.
+                    <p class="text-xs md:text-sm text-white/90 leading-relaxed">
+                        Marketing, construction and sentinel services under one registered company &mdash; with the same
+                        professionalism, clear communication and quality delivery on every assignment.
                     </p>
                 </div>
             </div>
@@ -107,590 +123,850 @@
             <!-- Right: Content Column -->
             <div class="lg:col-span-7 flex flex-col pt-4 lg:pt-12 pl-0 lg:pl-10">
 
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-6 block">BlickStone Private
+                    Limited</span>
+
                 <div class="mb-12">
-                    <h1
-                        class="hero-title text-[56px] md:text-[80px] lg:text-[110px] font-extrabold text-spira-black leading-tight">
-                        <div class="flex items-center gap-4 flex-wrap">
-                            <span>Just</span>
-                            <div
-                                class="relative w-24 h-12 md:w-36 md:h-20 bg-gray-200 rounded-full overflow-hidden inline-block translate-y-2">
-                                <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=60&w=600"
-                                    class="w-full h-full object-cover" alt="Just Pharmaceuticals thumbnail">
-                            </div>
-                        </div>
-                        <span>Strategic.</span><br>
-                        <span>Supply.</span>
+                    <h1 class="hero-title text-[44px] md:text-[68px] lg:text-[86px] font-extrabold text-blick-navy">
+                        <span id="type-1">Built on</span>
+                        <span id="type-2" class="text-blick-red">trust.</span><br>
+                        <span id="type-3" class="text-blick-ink">Delivered with structure.</span>
                     </h1>
                 </div>
 
                 <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-12 mt-4">
                     <div class="max-w-md">
-                        <p class="text-spira-darkGray text-lg md:text-xl leading-relaxed mb-10">
-                            Just Pharmaceuticals is your strategic partner in wholesale distribution. Supplying
-                            institutions with quality medicines and galenicals.
+                        <p class="text-blick-gray text-lg md:text-xl leading-relaxed mb-10">
+                            A Zimbabwean multi-divisional company built around practical execution. We don't just build
+                            structures &mdash; we build trust, through structured contracts, honest pricing and quality
+                            workmanship.
                         </p>
-                        <a href="shop.html"
-                            class="bg-spira-darkGray hover:bg-spira-black text-white px-10 py-5 rounded-full flex items-center gap-4 transition-all group">
-                            <span class="font-bold text-sm tracking-widest uppercase">View Catalog</span>
-                            <div
-                                class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                            </div>
-                        </a>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="construction.html"
+                                class="bg-blick-navy hover:bg-blick-deep text-white px-9 py-5 rounded-full flex items-center gap-4 transition-all group">
+                                <span class="font-bold text-sm tracking-widest uppercase">Explore Services</span>
+                                <span
+                                    class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </span>
+                            </a>
+                            <button type="button" onclick="inquiry.siteVisit()"
+                                class="border border-blick-navy text-blick-navy px-9 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blick-navy hover:text-white transition-all">
+                                Book a Site Visit
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Product Preview Card -->
+                    <!-- Deposit Preview Card -->
                     <div
-                        class="bg-white p-6 rounded-4xl shadow-sm border border-gray-100 flex flex-col items-center gap-4 min-w-[160px]">
-                        <div
-                            class="relative w-16 h-28 bg-gradient-to-b from-gray-50 to-gray-200 rounded-full border border-gray-300 shadow-inner flex flex-col overflow-hidden">
-                            <div class="h-1/2 bg-white/60 border-b border-gray-300"></div>
-                            <div class="h-1/2 flex items-center justify-center opacity-30">
-                                <div class="flex flex-wrap gap-1 px-3">
-                                    <div class="w-1.5 h-1.5 rounded-full bg-spira-green"></div>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-spira-green"></div>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-spira-green"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <span
-                                class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-1">Status</span>
-                            <span class="text-xs font-bold uppercase tracking-tighter">Wholesale</span>
-                        </div>
+                        class="bg-white p-6 rounded-4xl border border-blick-steel flex flex-col items-center gap-3 min-w-[170px]">
+                        <span class="text-[10px] font-bold text-blick-gray uppercase tracking-widest">Start From</span>
+                        <span class="text-5xl font-extrabold text-blick-red leading-none">30<span
+                                class="text-2xl align-top">%</span></span>
+                        <span class="text-[11px] text-blick-gray text-center leading-snug">deposit on large
+                            projects</span>
+                        <a href="pricing.html"
+                            class="text-[10px] font-bold uppercase tracking-widest text-blick-navy border-t border-blick-steel pt-3 w-full text-center hover:text-blick-red transition-colors">
+                            See Pricing
+                        </a>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Expanded Features Section -->
+        <!-- Credentials -->
+        <section class="mb-32 bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-12">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+                <div>
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-3 block">Credentials</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-blick-navy leading-tight">Registered to work,
+                        including on public projects.</h2>
+                </div>
+                <p class="text-sm text-blick-gray max-w-md lg:text-right">
+                    Registered with the Procurement Regulatory Authority of Zimbabwe under section 4 of the PPDPA
+                    (General) Regulations, 2018 &mdash; so we can be engaged on public procurement work as well as
+                    private projects.
+                </p>
+            </div>
+
+            <dl class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border-t-2 border-blick-navy pt-5">
+                    <dt class="text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">Company
+                        Registration</dt>
+                    <dd class="text-lg font-bold text-blick-navy">379/2019</dd>
+                    <dd class="text-xs text-blick-gray mt-1">Registered 18 February 2019</dd>
+                </div>
+                <div class="border-t-2 border-blick-red pt-5">
+                    <dt class="text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">PRAZ Supplier
+                        No.</dt>
+                    <dd class="text-lg font-bold text-blick-navy">PR2650878185</dd>
+                    <dd class="text-xs text-blick-gray mt-1">Certificate valid to 31 December 2026</dd>
+                </div>
+                <div class="border-t-2 border-blick-navy pt-5">
+                    <dt class="text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">PRAZ Category</dt>
+                    <dd class="text-lg font-bold text-blick-navy">SC006</dd>
+                    <dd class="text-xs text-blick-gray mt-1">Construction &amp; Civil Works &mdash; buildings, dams,
+                        roads</dd>
+                </div>
+                <div class="border-t-2 border-blick-red pt-5">
+                    <dt class="text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">Organisation
+                        Category</dt>
+                    <dd class="text-lg font-bold text-blick-navy">SME</dd>
+                    <dd class="text-xs text-blick-gray mt-1">Small/Medium Enterprise</dd>
+                </div>
+            </dl>
+
+            <p class="mt-8 pt-6 border-t border-blick-steel text-xs text-blick-gray">
+                Procuring entities can validate our certificate on the eGP System &mdash; we supply the verification
+                code with every tender submission.
+            </p>
+        </section>
+
+        <!-- Business Divisions -->
         <section class="mb-32">
             <div class="text-center max-w-2xl mx-auto mb-16 px-6">
-                <span class="text-spira-green font-bold tracking-widest uppercase text-xs mb-4 block">Our
-                    Capabilities</span>
-                <h2 class="text-4xl md:text-5xl font-bold text-spira-black leading-tight">Reliable Logistics.<br>Quality
-                    Assured.</h2>
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Business
+                    Divisions</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-blick-navy leading-tight">Three focused divisions.<br>One
+                    shared standard.</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1: Logistics -->
-                <div
-                    class="bg-[#F0F4FF] rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[360px] group hover:bg-[#E5EAFF] transition-colors relative overflow-hidden">
-                    <div class="relative z-10">
-                        <div
-                            class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-8 text-[#5B7CF0]">
-                            <i data-lucide="truck" class="w-7 h-7"></i>
-                        </div>
-                        <h4 class="font-bold text-xl mb-4 text-[#2A3C85]">Streamlined Logistics</h4>
-                        <p class="text-[#4A5585] text-sm leading-relaxed">
-                            Nationwide delivery fleet ensuring timely distribution to hospitals and retail pharmacies.
-                            Cold-chain capable.
-                        </p>
-                    </div>
-                    <div
-                        class="absolute top-0 right-0 w-32 h-32 bg-white/40 rounded-full blur-2xl translate-x-10 -translate-y-10">
-                    </div>
-                </div>
 
-                <!-- Card 2: Proven -->
+                <!-- Marketing -->
                 <div
-                    class="bg-white border border-gray-100 rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[360px] shadow-sm hover:shadow-md transition-shadow">
+                    class="bg-white border border-blick-steel rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[400px] hover:border-blick-blue transition-colors">
                     <div>
-                        <div class="flex -space-x-4 mb-8">
-                            <div
-                                class="w-14 h-14 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center font-bold text-xs">
-                                MCAZ</div>
-                            <div
-                                class="w-14 h-14 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center font-bold text-xs">
-                                GMP</div>
-                            <div
-                                class="w-14 h-14 rounded-full border-4 border-white bg-gray-100 flex items-center justify-center">
-                                <i data-lucide="badge-check" class="w-8 h-8 text-spira-darkGray"></i>
-                            </div>
+                        <div
+                            class="w-14 h-14 rounded-full bg-blick-offWhite border border-blick-steel flex items-center justify-center mb-8 text-blick-blue">
+                            <i data-lucide="megaphone" class="w-7 h-7"></i>
                         </div>
-                        <h4 class="font-bold text-xl mb-4 text-spira-black">Fully Certified</h4>
-                        <p class="text-spira-darkGray text-sm leading-relaxed opacity-80">
-                            Licensed by MCAZ. Adherence to strict GDP (Good Distribution Practice) standards for all
-                            pharmaceuticals.
+                        <h3 class="font-bold text-xl mb-3 text-blick-navy">BlickStone Marketing</h3>
+                        <p class="text-blick-gray text-sm leading-relaxed mb-6">
+                            Marketing services that strengthen visibility, improve client engagement and build market
+                            presence.
                         </p>
+                        <ul class="space-y-2 text-sm text-blick-ink">
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i>Brand promotion &amp; awareness
+                                campaigns</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i>Marketing strategy support</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i>Social media &amp; content
+                                planning</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i>Advertising &amp; promotional
+                                support</li>
+                        </ul>
                     </div>
+                    <a href="marketing.html"
+                        class="mt-8 w-full border border-blick-steel text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center hover:bg-blick-navy hover:text-white hover:border-blick-navy transition-colors">
+                        Explore Marketing
+                    </a>
                 </div>
 
-                <!-- Card 3: Bulk -->
+                <!-- Construction (flagship) -->
                 <div
-                    class="bg-[#7C9B8D] rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[360px] text-white relative overflow-hidden group">
+                    class="bg-blick-deep rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[400px] text-white relative overflow-hidden group">
                     <div class="relative z-10">
-                        <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mb-8">
-                            <i data-lucide="blocks" class="w-7 h-7"></i>
+                        <div class="w-14 h-14 rounded-full bg-blick-red flex items-center justify-center mb-8">
+                            <i data-lucide="hard-hat" class="w-7 h-7"></i>
                         </div>
-                        <h4 class="font-bold text-xl mb-4 text-white">Bulk Pharma & Sundries</h4>
-                        <p class="text-white/90 text-sm leading-relaxed font-medium">
-                            Comprehensive catalog ranging from generic medicines to surgical cotton and galenical raw
-                            materials.
+                        <h3 class="font-bold text-xl mb-3 text-white">BlickStone Construction</h3>
+                        <p class="text-white/80 text-sm leading-relaxed mb-6">
+                            Construction and project management for residential, commercial, institutional and
+                            industrial developments.
                         </p>
+                        <ul class="space-y-2 text-sm text-white/90">
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>New builds, renovations &amp;
+                                extensions</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Incomplete houses &mdash; finish
+                                &amp; upgrade</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Roofing, tiling, durawalls &amp;
+                                finishes</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Quantity surveying, BOQs &amp;
+                                project management</li>
+                        </ul>
                     </div>
+                    <a href="construction.html"
+                        class="relative z-10 mt-8 w-full bg-blick-red text-white py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center hover:bg-blick-darkRed transition-colors">
+                        View 11 Services
+                    </a>
                     <div
-                        class="absolute bottom-[-10%] right-[-10%] w-48 h-48 opacity-40 group-hover:scale-110 transition-transform duration-700">
-                        <i data-lucide="sprout" class="w-full h-full text-white/20"></i>
+                        class="absolute bottom-[-20%] right-[-20%] w-72 h-72 rounded-full bg-blick-blue blur-[90px] opacity-30 group-hover:opacity-50 transition-opacity">
                     </div>
+                </div>
+
+                <!-- Sentinel -->
+                <div
+                    class="bg-white border border-blick-steel rounded-[2.5rem] p-8 flex flex-col justify-between min-h-[400px] hover:border-blick-navy transition-colors">
+                    <div>
+                        <div
+                            class="w-14 h-14 rounded-full bg-blick-offWhite border border-blick-steel flex items-center justify-center mb-8 text-blick-navy">
+                            <i data-lucide="shield-check" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-blick-navy">BlickStone Sentinel Group</h3>
+                        <p class="text-blick-gray text-sm leading-relaxed mb-6">
+                            Security and protection-focused support for properties, events, business premises and
+                            sites.
+                        </p>
+                        <ul class="space-y-2 text-sm text-blick-ink">
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-navy mt-0.5 shrink-0"></i>Property monitoring &amp;
+                                security support</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-navy mt-0.5 shrink-0"></i>Event security assistance</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-navy mt-0.5 shrink-0"></i>Business premises support</li>
+                            <li class="flex gap-2"><i data-lucide="check"
+                                    class="w-4 h-4 text-blick-navy mt-0.5 shrink-0"></i>Site supervision &amp; safety
+                                checks</li>
+                        </ul>
+                    </div>
+                    <a href="sentinel.html"
+                        class="mt-8 w-full border border-blick-steel text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center hover:bg-blick-navy hover:text-white hover:border-blick-navy transition-colors">
+                        Explore Sentinel
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Partners Section (Fleshed Out) -->
-        <section class="mb-32 bg-gray-50 rounded-[3rem] p-12 text-center relative overflow-hidden">
-            <div class="relative z-10">
-                <h3 class="text-2xl font-bold mb-10 text-spira-black">Distributing To Leading Institutions</h3>
-
-                <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70 mb-12">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center"><i
-                                data-lucide="plus" class="w-5 h-5 text-gray-500"></i></div>
-                        <span class="text-2xl font-bold text-gray-800">Greenwood</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center"><i
-                                data-lucide="plus" class="w-5 h-5 text-gray-500"></i></div>
-                        <span class="text-2xl font-bold text-gray-800">Clicks</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center"><i
-                                data-lucide="plus" class="w-5 h-5 text-gray-500"></i></div>
-                        <span class="text-2xl font-bold text-gray-800">Booties</span>
-                    </div>
-                </div>
-
-                <button
-                    class="bg-white border hover:bg-gray-50 text-spira-black px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest transition-all">
-                    Become a Partner
-                </button>
-            </div>
-
-            <!-- Decoration -->
-            <div class="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
-                <div class="absolute -top-24 -left-24 w-64 h-64 bg-spira-green rounded-full blur-[80px]"></div>
-                <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-blue-200 rounded-full blur-[80px]"></div>
-            </div>
-        </section>
-
-        <!-- Medical Aid Section -->
-        <section class="mb-32 max-w-4xl mx-auto text-center">
-            <h3 class="text-2xl font-bold mb-8 text-spira-black">Flexible Trade Terms Available</h3>
-            <div
-                class="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center w-full">
-                    <!-- Placeholders for Medical Aid Logos -->
-                    <div
-                        class="flex items-center justify-center font-bold text-gray-400 text-lg uppercase tracking-wider">
-                        Credit Facilities</div>
-                    <div
-                        class="flex items-center justify-center font-bold text-gray-400 text-lg uppercase tracking-wider">
-                        EFT / RTGS</div>
-                    <div
-                        class="flex items-center justify-center font-bold text-gray-400 text-lg uppercase tracking-wider">
-                        Net-30 Terms</div>
-                    <div
-                        class="flex items-center justify-center font-bold text-gray-400 text-lg uppercase tracking-wider">
-                        Bulk Discounts</div>
-                </div>
-                <div class="w-full md:w-auto border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-8">
-                    <button
-                        class="w-full whitespace-nowrap bg-[#E8F2EE] text-[#2A5C46] px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#D1E6DE] transition-colors">
-                        Apply for Credit
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Prescription Upload Section -->
-        <section class="mb-32 bg-[#2A3C85] rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+        <!-- Finish Your House -->
+        <section class="mb-32 bg-blick-deep rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-6">
-                        <i data-lucide="file-up" class="w-6 h-6"></i>
+                    <div class="w-12 h-12 rounded-full bg-blick-red flex items-center justify-center mb-6">
+                        <i data-lucide="home" class="w-6 h-6"></i>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Bulk Order or Tender?</h2>
-                    <p class="text-indigo-200 mb-8 text-lg">
-                        Upload your requirements list or tender documents. We will respond with a proforma invoice
-                        within
-                        2 hours.
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Finish your house<br>without
+                        stress.</h2>
+                    <p class="text-white/70 mb-8 text-lg max-w-md">
+                        Stalled at slab level? Roof on but nothing else? We complete, upgrade and improve unfinished or
+                        stalled projects professionally &mdash; start to finish.
                     </p>
-                    <ul class="space-y-4 mb-8">
+                    <ul class="space-y-4 mb-10">
                         <li class="flex items-center gap-3 text-sm font-medium">
-                            <div class="w-6 h-6 rounded-full bg-[#4A5585] flex items-center justify-center"><i
-                                    data-lucide="check" class="w-3 h-3"></i></div>
-                            <span>Rapid Proforma</span>
+                            <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0"><i
+                                    data-lucide="check" class="w-3 h-3"></i></span>
+                            <span>Professional assessment of what's already built</span>
                         </li>
                         <li class="flex items-center gap-3 text-sm font-medium">
-                            <div class="w-6 h-6 rounded-full bg-[#4A5585] flex items-center justify-center"><i
-                                    data-lucide="check" class="w-3 h-3"></i></div>
-                            <span>Stock Reservation</span>
+                            <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0"><i
+                                    data-lucide="check" class="w-3 h-3"></i></span>
+                            <span>Itemised BOQ so you know the real cost to finish</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-medium">
+                            <span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center shrink-0"><i
+                                    data-lucide="check" class="w-3 h-3"></i></span>
+                            <span>Balance payable over 12&ndash;24 months, linked to progress</span>
                         </li>
                     </ul>
-                </div>
-
-                <div
-                    class="bg-white/10 rounded-3xl p-8 border-2 border-dashed border-indigo-300/30 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-colors cursor-pointer group h-full min-h-[300px]">
-                    <div
-                        class="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg">
-                        <i data-lucide="file-spreadsheet" class="w-8 h-8 text-[#2A3C85]"></i>
-                    </div>
-                    <h4 class="font-bold text-xl mb-2">Upload Requirements List</h4>
-                    <p class="text-indigo-200 text-sm mb-6">Excel, PDF or Word</p>
-                    <button
-                        class="bg-white text-[#2A3C85] px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-indigo-50 transition-colors">
-                        Select File
+                    <button type="button" onclick="inquiry.whatsapp('Incomplete Houses — Finish & Upgrade', 'CN-002')"
+                        class="bg-blick-red hover:bg-blick-darkRed text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all inline-flex items-center gap-3">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Get a Cost to Finish
                     </button>
                 </div>
-            </div>
 
-            <!-- Decoration -->
-            <div class="absolute top-0 right-0 w-full h-full opacity-20 pointer-events-none">
-                <div
-                    class="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-500 blur-[100px]">
+                <!-- Work in progress on a stalled structure -->
+                <div class="grid grid-cols-2 gap-4">
+                    <figure class="row-span-2 relative rounded-3xl overflow-hidden border-2 border-white/10">
+                        <img src="assets/images/site-shell-timbers.jpg"
+                            alt="Roof timbers being set onto an unfinished brick shell on a BlickStone site"
+                            class="w-full h-full min-h-[280px] object-cover" loading="lazy" width="762" height="1016">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-blick-deep/85 px-4 py-3 text-xs font-medium leading-snug">
+                            Roof timbers going onto a shell that had stood unfinished.
+                        </figcaption>
+                    </figure>
+                    <figure class="relative rounded-3xl overflow-hidden border-2 border-white/10">
+                        <img src="assets/images/site-roof-crew.jpg"
+                            alt="A BlickStone crew laying roof timbers, with the Bulawayo skyline behind them"
+                            class="w-full h-40 md:h-52 object-cover" loading="lazy" width="825" height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-blick-deep/85 px-4 py-2 text-[11px] font-medium">
+                            Roofing the structure out.
+                        </figcaption>
+                    </figure>
+                    <figure class="relative rounded-3xl overflow-hidden border-2 border-white/10">
+                        <img src="assets/images/site-walling.jpg"
+                            alt="Two BlickStone bricklayers coursing brickwork on an extension"
+                            class="w-full h-40 md:h-52 object-cover object-top" loading="lazy" width="825"
+                            height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-blick-deep/85 px-4 py-2 text-[11px] font-medium">
+                            Our own team on site.
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
-        </section>
 
-        <!-- Virtual Pharmacist Section -->
-        <section class="mb-32">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <!-- Visual -->
-                <div
-                    class="relative rounded-[3rem] overflow-hidden min-h-[500px] border border-gray-100 shadow-sm order-2 lg:order-1">
-                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=1000"
-                        alt="Pharmacist Consultation" class="w-full h-full object-cover">
-                    <div class="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-3xl p-6">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="relative">
-                                <img src="https://i.pravatar.cc/150?u=44" alt="Pharmacist"
-                                    class="w-12 h-12 rounded-full border-2 border-white shadow-sm object-cover">
-                                <div
-                                    class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-white">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="font-bold text-sm text-spira-black">Tatenda Chiwenga</h5>
-                                <p class="text-xs text-spira-darkGray">Sales Director</p>
-                            </div>
-                        </div>
-                        <div
-                            class="flex items-center justify-between text-xs font-medium text-gray-500 bg-gray-50 rounded-xl px-4 py-3">
-                            <span class="flex items-center gap-2">
-                                <div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div> Live Now
-                            </span>
-                            <span>Wait time: <span class="text-green-600 font-bold">2 mins</span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content -->
-                <div class="order-1 lg:order-2">
-                    <span class="text-spira-green font-bold tracking-widest uppercase text-xs mb-4 block">Trade
-                        Support</span>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-spira-black">Need a Bulk Quote?<br>Talk to
-                        Sales.</h2>
-                    <p class="text-spira-darkGray text-lg leading-relaxed mb-8">
-                        Our dedicated account managers are ready to assist with bulk pricing, tender compliance, and
-                        shipping logistics for your facility.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button
-                            class="bg-gray-900 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3 font-bold hover:bg-black transition-all shadow-lg shadow-gray-200">
-                            <i data-lucide="video" class="w-5 h-5"></i>
-                            <span>Call Sales Team</span>
-                        </button>
-                        <button
-                            class="bg-white border border-gray-200 text-gray-700 px-8 py-4 rounded-full flex items-center justify-center gap-3 font-bold hover:bg-gray-50 transition-all">
-                            <i data-lucide="message-square" class="w-5 h-5"></i>
-                            <span>Chat with Representative</span>
-                        </button>
-                    </div>
-                </div>
+            <div
+                class="absolute top-[-30%] right-[-10%] w-[700px] h-[700px] rounded-full bg-blick-navy blur-[120px] opacity-40 pointer-events-none">
             </div>
         </section>
 
-        <!-- Featured Products Section -->
+        <!-- Featured Services -->
         <section class="mb-32">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <div class="max-w-xl">
-                    <span class="text-spira-green font-bold tracking-widest uppercase text-xs mb-4 block">Wholesale
-                        Catalog</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-spira-black">Featured Products</h2>
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Construction
+                        Division</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-blick-navy">Most requested services</h2>
                 </div>
-                <a href="shop.html"
-                    class="flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-spira-green transition-colors group">
-                    View All Products <i data-lucide="arrow-right"
+                <a href="construction.html"
+                    class="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-blick-navy hover:text-blick-red transition-colors group">
+                    View All Services <i data-lucide="arrow-right"
                         class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Product 1: Mr. Strong (OTC) -->
-                <div class="bg-white p-6 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer"
-                    onclick="window.location.href='shop.html?tab=otc'">
-                    <div
-                        class="h-64 bg-red-50 rounded-3xl mb-6 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-center">
-                            <i data-lucide="pill" class="w-16 h-16 text-red-500 mx-auto mb-2"></i>
-                            <span class="font-black text-2xl text-red-600 block">Generic</span>
-                        </div>
-                        <div
-                            class="absolute top-4 right-4 bg-red-100 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-red-700">
-                            Bulk Pack</div>
-                    </div>
-                    <h3 class="font-bold text-lg mb-1 group-hover:text-spira-green transition-colors">Paracetamol 500mg
-                    </h3>
-                    <div class="flex items-center justify-between">
-                        <span class="text-gray-400 text-sm">Tin of 1000 Tabs</span>
-                        <span class="font-bold">$12.00</span>
-                    </div>
-                </div>
 
-                <!-- Product 2: 4Cs Syrup (OTC) -->
-                <div class="bg-white p-6 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer"
-                    onclick="window.location.href='shop.html?tab=otc'">
+                <a href="construction.html#build"
+                    class="bg-white p-6 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all group block">
                     <div
-                        class="h-64 bg-amber-50 rounded-3xl mb-6 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-center">
-                            <i data-lucide="flask-conical" class="w-16 h-16 text-amber-500 mx-auto mb-2"></i>
-                            <span class="font-black text-2xl text-amber-600 block">Galenical</span>
-                        </div>
+                        class="h-48 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy group-hover:bg-blick-navy group-hover:text-white transition-colors">
+                        <i data-lucide="building-2" class="w-16 h-16"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-1 group-hover:text-spira-green transition-colors">Cough Mixture Base
-                    </h3>
-                    <div class="flex items-center justify-between">
-                        <span class="text-gray-400 text-sm">5 Litre Drum</span>
-                        <span class="font-bold">$25.00</span>
-                    </div>
-                </div>
+                    <h3 class="font-bold text-lg mb-1 text-blick-navy">Residential &amp; Commercial</h3>
+                    <p class="text-sm text-blick-gray mb-4">Modern, comfortable, sustainable buildings that add value to
+                        your investment.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blick-red">Quoted from BOQ</span>
+                </a>
 
-                <!-- Product 3: Dolex (OTC) -->
-                <div class="bg-white p-6 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer"
-                    onclick="window.location.href='shop.html?tab=otc'">
+                <a href="construction.html#build"
+                    class="bg-white p-6 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all group block">
                     <div
-                        class="h-64 bg-blue-50 rounded-3xl mb-6 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-center">
-                            <i data-lucide="activity" class="w-16 h-16 text-blue-500 mx-auto mb-2"></i>
-                            <span class="font-black text-2xl text-blue-600 block">Sundries</span>
-                        </div>
+                        class="h-48 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy group-hover:bg-blick-navy group-hover:text-white transition-colors">
+                        <i data-lucide="home" class="w-16 h-16"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-1 group-hover:text-spira-green transition-colors">Surgical Spirit
-                    </h3>
-                    <div class="flex items-center justify-between">
-                        <span class="text-gray-400 text-sm">20 Litre Drum</span>
-                        <span class="font-bold">$45.00</span>
-                    </div>
-                </div>
+                    <h3 class="font-bold text-lg mb-1 text-blick-navy">Incomplete Houses</h3>
+                    <p class="text-sm text-blick-gray mb-4">Complete, upgrade and improve unfinished or stalled projects
+                        professionally.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blick-red">Most popular</span>
+                </a>
 
-                <!-- Product 4: Tenoric/BP Meds (Prescription) -->
-                <div class="bg-white p-6 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer"
-                    onclick="window.location.href='shop.html?tab=pom'">
+                <a href="construction.html#structural"
+                    class="bg-white p-6 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all group block">
                     <div
-                        class="h-64 bg-purple-50 rounded-3xl mb-6 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-center">
-                            <i data-lucide="stethoscope" class="w-16 h-16 text-purple-500 mx-auto mb-2"></i>
-                            <span class="font-black text-2xl text-purple-600 block">Medical</span>
-                        </div>
-                        <div
-                            class="absolute top-4 right-4 bg-purple-100 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-purple-700">
-                            Prescription</div>
+                        class="h-48 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy group-hover:bg-blick-navy group-hover:text-white transition-colors">
+                        <i data-lucide="fence" class="w-16 h-16"></i>
                     </div>
-                    <h3 class="font-bold text-lg mb-1 group-hover:text-spira-green transition-colors">Latex Gloves (Box)
-                    </h3>
-                    <div class="flex items-center justify-between">
-                        <span class="text-gray-400 text-sm">100 Pairs</span>
-                        <a href="index.html#upload"
-                            class="text-xs font-bold bg-spira-black text-white px-3 py-1.5 rounded-full uppercase">Add</a>
+                    <h3 class="font-bold text-lg mb-1 text-blick-navy">Durawalls &amp; External Works</h3>
+                    <p class="text-sm text-blick-gray mb-4">Secure your property with walls, plastering, paving and
+                        durawall construction.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blick-red">From 30% deposit</span>
+                </a>
+
+                <a href="construction.html#professional"
+                    class="bg-white p-6 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all group block">
+                    <div
+                        class="h-48 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy group-hover:bg-blick-navy group-hover:text-white transition-colors">
+                        <i data-lucide="ruler" class="w-16 h-16"></i>
                     </div>
-                </div>
+                    <h3 class="font-bold text-lg mb-1 text-blick-navy">Quantity Surveying &amp; BOQs</h3>
+                    <p class="text-sm text-blick-gray mb-4">Accurate estimates and cost control for well-planned
+                        projects.</p>
+                    <span class="text-xs font-bold uppercase tracking-widest text-blick-red">Professional fee</span>
+                </a>
             </div>
         </section>
 
-        <!-- Health Services Section -->
-        <section class="mb-32 text-center">
-            <span class="text-spira-green font-bold tracking-widest uppercase text-xs mb-4 block">Product
-                Divisions</span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-16 text-spira-black">Comprehensive Supply Categories</h2>
-
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Service 1: BP Checks -->
-                <div
-                    class="bg-white p-4 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer">
-                    <div class="h-40 rounded-[1.5rem] overflow-hidden mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?auto=format&fit=crop&q=80&w=400"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                            alt="BP Check">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2 text-gray-800 px-2">Pharmaceuticals</h4>
-                    <p class="text-sm text-gray-500 px-2 mb-2">Tablets, capsules, and syrups in bulk packs.</p>
+        <!-- On Site -->
+        <section id="our-work" class="mb-32 scroll-mt-24">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div class="max-w-xl">
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">On Site</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-blick-navy leading-tight">Our own team,<br>our own
+                        work.</h2>
                 </div>
+                <p class="text-blick-gray max-w-sm md:text-right">
+                    Every shot below is a BlickStone crew on a live project &mdash; our own sites, our own people.
+                </p>
+            </div>
 
-                <!-- Service 2: Diabetes Screening -->
-                <div
-                    class="bg-white p-4 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer">
-                    <div class="h-40 rounded-[1.5rem] overflow-hidden mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=400"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                            alt="Diabetes Screening">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2 text-gray-800 px-2">Galenicals</h4>
-                    <p class="text-sm text-gray-500 px-2 mb-2">Raw materials, bases, and compounding ingredients.</p>
-                </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
-                <!-- Service 3: Vaccinations -->
-                <div
-                    class="bg-white p-4 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer">
-                    <div class="h-40 rounded-[1.5rem] overflow-hidden mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1611689102033-7f9e0a8eb851?auto=format&fit=crop&q=80&w=400"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                            alt="Vaccinations">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2 text-gray-800 px-2">Surgical Sundries</h4>
-                    <p class="text-sm text-gray-500 px-2 mb-2">Bandages, cotton wool, spirits, and disposables.</p>
-                </div>
+                <a href="construction.html#build" class="group block">
+                    <figure class="relative rounded-[2rem] overflow-hidden bg-blick-deep">
+                        <img src="assets/images/site-roof-timbers.jpg"
+                            alt="BlickStone carpenters fixing a timber roof structure on a commercial building in central Bulawayo"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" width="825" height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blick-deep via-blick-deep/95 to-transparent px-5 pt-16 pb-5 text-white">
+                            <span
+                                class="block text-[10px] font-bold uppercase tracking-widest text-blick-red mb-1">Roofing
+                                &amp; Ceilings</span>
+                            <span class="block text-sm font-medium leading-snug">Timber roof structure set out over
+                                brickwork.</span>
+                        </figcaption>
+                    </figure>
+                </a>
 
-                <!-- Service 4: Family Planning -->
-                <div
-                    class="bg-white p-4 rounded-[2rem] border border-gray-100 shadow-sm hover:shadow-lg transition-all group cursor-pointer">
-                    <div class="h-40 rounded-[1.5rem] overflow-hidden mb-6 relative">
-                        <img src="https://images.unsplash.com/photo-1767411973233-8a74eaac1101?auto=format&fit=crop&q=80&w=400"
-                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                            alt="Family Planning">
-                    </div>
-                    <h4 class="font-bold text-lg mb-2 text-gray-800 px-2">Medical Equipment</h4>
-                    <p class="text-sm text-gray-500 px-2 mb-2">Diagnostic tools and hospital furniture.</p>
-                </div>
+                <a href="construction.html#build" class="group block">
+                    <figure class="relative rounded-[2rem] overflow-hidden bg-blick-deep">
+                        <img src="assets/images/site-walling-wide.jpg"
+                            alt="BlickStone bricklayers building up brick walls on a commercial extension"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" width="825" height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blick-deep via-blick-deep/95 to-transparent px-5 pt-16 pb-5 text-white">
+                            <span
+                                class="block text-[10px] font-bold uppercase tracking-widest text-blick-red mb-1">Residential
+                                &amp; Commercial</span>
+                            <span class="block text-sm font-medium leading-snug">Brickwork carried up to wall
+                                plate.</span>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="construction.html#structural" class="group block">
+                    <figure class="relative rounded-[2rem] overflow-hidden bg-blick-deep">
+                        <img src="assets/images/site-boundary-wall.jpg"
+                            alt="A completed brick perimeter wall built by BlickStone, with vent openings along the top course"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" width="762" height="1016">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blick-deep via-blick-deep/95 to-transparent px-5 pt-16 pb-5 text-white">
+                            <span
+                                class="block text-[10px] font-bold uppercase tracking-widest text-blick-red mb-1">Durawalls
+                                &amp; External Works</span>
+                            <span class="block text-sm font-medium leading-snug">Perimeter walling with vented top
+                                course.</span>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <a href="construction.html#structural" class="group block">
+                    <figure class="relative rounded-[2rem] overflow-hidden bg-blick-deep">
+                        <img src="assets/images/site-civil-trench.jpg"
+                            alt="A BlickStone worker excavating a service trench alongside a house"
+                            class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700"
+                            loading="lazy" width="825" height="1100">
+                        <figcaption
+                            class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blick-deep via-blick-deep/95 to-transparent px-5 pt-16 pb-5 text-white">
+                            <span class="block text-[10px] font-bold uppercase tracking-widest text-blick-red mb-1">Civil
+                                Works</span>
+                            <span class="block text-sm font-medium leading-snug">Service trench excavation on a
+                                residential site.</span>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
         </section>
 
-        <!-- WhatsApp Ordering Section (Expanded) -->
-        <section class="bg-spira-black rounded-[3rem] p-8 md:p-20 text-white relative overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <!-- How We Work -->
+        <section id="how-we-work" class="mb-32 scroll-mt-24">
+            <div class="text-center max-w-2xl mx-auto mb-16 px-6">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">How We Work</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-blick-navy leading-tight mb-6">A clear process.<br>A
+                    controlled project.</h2>
+                <p class="text-blick-gray">Every project follows a structured process, so you always know what stage
+                    your project is at and what happens next.</p>
+            </div>
+
+            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">01</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Enquiry</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">You reach out, and we log your project details
+                        and requirements.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">02</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Site Visit &amp; Assessment</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Our team inspects the site and assesses the scope
+                        of work. A site visit fee applies, deductible upon project confirmation.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">03</span>
+                    <h3 class="font-bold text-blick-navy mb-2">BOQ &amp; Costing</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Our Quantity Surveyor prepares a professional
+                        Bill of Quantities and cost breakdown.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">04</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Proposal &amp; Quotation</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">You receive a clear, itemised quotation for the
+                        project.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">05</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Contract &amp; Deposit</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">We sign a structured agreement and you pay your
+                        deposit to begin.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">06</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Construction</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">Our team executes the work with quality control
+                        and progress inspections at every stage.</p>
+                </li>
+                <li class="bg-blick-navy text-white rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-white/25 mb-4">07</span>
+                    <h3 class="font-bold mb-2">Handover</h3>
+                    <p class="text-sm text-white/80 leading-relaxed">Final inspection, snag resolution and formal
+                        handover of your completed project.</p>
+                </li>
+                <li class="bg-blick-red text-white rounded-[2rem] p-7 flex flex-col justify-between">
+                    <div>
+                        <div class="w-11 h-11 rounded-full bg-white/20 flex items-center justify-center mb-5">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">Start at step 01</h3>
+                        <p class="text-sm text-white/85 leading-relaxed">Tell us about your project and we'll take it
+                            from there.</p>
+                    </div>
+                    <button type="button" onclick="inquiry.siteVisit()"
+                        class="mt-6 bg-white text-blick-red py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-offWhite transition-colors">
+                        Make an Enquiry
+                    </button>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Payment Plans -->
+        <section id="payment-plans" class="mb-32 scroll-mt-24">
+            <div class="text-center max-w-2xl mx-auto mb-12 px-6">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Flexible Payment
+                    Plans</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-blick-navy leading-tight mb-6">Build now.<br>Pay
+                    comfortably.</h2>
+                <p class="text-blick-gray">Construction is a major investment, so our payment structure is affordable,
+                    structured and transparent. The bigger the project, the lower the deposit percentage required to
+                    start.</p>
+            </div>
+
+            <div
+                class="bg-white border border-blick-steel rounded-[2.5rem] p-6 md:p-10 max-w-4xl mx-auto overflow-hidden">
+                <table class="w-full text-left">
+                    <caption class="sr-only">Deposit required by project size</caption>
+                    <thead>
+                        <tr class="text-[11px] font-bold uppercase tracking-widest text-blick-gray">
+                            <th scope="col" class="pb-4">Project Size</th>
+                            <th scope="col" class="pb-4 text-right">Deposit Required</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-blick-steel">
+                        <tr>
+                            <th scope="row" class="py-5 font-medium text-blick-ink">Small projects</th>
+                            <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">50%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-5 font-medium text-blick-ink">Medium projects</th>
+                            <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">40%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-5 font-medium text-blick-ink">Large projects</th>
+                            <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-red">30&ndash;35%
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="py-5 font-medium text-blick-ink">Residential durawall</th>
+                            <td class="py-5 text-right text-2xl md:text-3xl font-extrabold text-blick-navy">30%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <ul class="mt-8 pt-8 border-t border-blick-steel space-y-3 text-sm text-blick-gray">
+                    <li class="flex gap-3"><i data-lucide="calendar-clock"
+                            class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Balance payable over 12&ndash;24 months,
+                        structured in stages linked to progress.</li>
+                    <li class="flex gap-3"><i data-lucide="car" class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Site
+                        visit fee applies per visit, deductible upon project confirmation.</li>
+                    <li class="flex gap-3"><i data-lucide="file-text"
+                            class="w-4 h-4 text-blick-red mt-0.5 shrink-0"></i>Admin &amp; documentation fee applies at
+                        contract stage.</li>
+                </ul>
+
+                <p class="mt-6 text-[11px] uppercase tracking-widest font-bold text-blick-gray text-center">Structured
+                    &middot; Transparent &middot; Client-Focused</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto mt-8 text-center">
+                <a href="pricing.html"
+                    class="inline-flex items-center gap-3 bg-blick-navy text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-blick-deep transition-colors group">
+                    <span>How we price, in full</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <p class="text-xs text-blick-gray mt-4">Deposit calculator, what moves the price, and the fees to
+                    expect.</p>
+            </div>
+        </section>
+
+        <!-- Coverage Checker -->
+        <section class="mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div
-                        class="w-16 h-16 bg-[#25D366] rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-green-900/20 rotate-3">
-                        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-none">Restock Instantly<br>via WhatsApp.
-                    </h2>
-                    <p class="text-gray-400 mb-8 text-lg max-w-md">
-                        Check stock levels and place trade orders in seconds. Automated invoicing available.
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Service
+                        Coverage</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-blick-navy mb-6 leading-tight">Bulawayo &amp;
+                        beyond,<br>nationwide.</h2>
+                    <p class="text-blick-gray text-lg leading-relaxed mb-8">
+                        Our team operates out of Astra Building Centre in Bulawayo and takes on projects across
+                        Zimbabwe. Pick your area to see how we cover it.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button
-                            class="bg-[#25D366] hover:bg-[#20bd5a] text-white px-10 py-4 rounded-full flex items-center justify-center gap-3 transition-all transform hover:scale-105 font-bold shadow-xl shadow-green-900/20">
-                            <span>Start Chatting</span>
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                        </button>
-                        <div class="flex items-center gap-4 px-6 py-4 bg-white/5 rounded-full">
-                            <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Payments:</span>
-                            <div class="flex gap-2">
-                                <div class="w-3 h-3 rounded-full bg-blue-500" title="EFT"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500" title="USD Cash"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <label for="region-selector"
+                        class="block text-xs font-bold uppercase tracking-widest text-blick-gray mb-3">Where is your
+                        site?</label>
+                    <select id="region-selector"
+                        class="w-full max-w-sm bg-white border border-blick-steel rounded-xl p-4 font-medium text-blick-ink focus:ring-2 focus:ring-blick-blue focus:border-transparent outline-none">
+                        <option value="">Select your area&hellip;</option>
+                        <option value="bulawayo">Bulawayo</option>
+                        <option value="matabeleland">Matabeleland North / South</option>
+                        <option value="midlands">Midlands (Gweru, Kwekwe)</option>
+                        <option value="harare">Harare &amp; Mashonaland</option>
+                        <option value="other">Elsewhere in Zimbabwe</option>
+                    </select>
                 </div>
 
-                <!-- Chat Simulation Visual -->
-                <div class="relative">
+                <div id="coverage-results"
+                    class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-10 transition-all duration-500">
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <span
+                                class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">Site
+                                Visits</span>
+                            <span id="visit-arrangement" class="block text-2xl font-extrabold text-blick-red">Select an
+                                area</span>
+                        </div>
+                        <div>
+                            <span
+                                class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-2">Served
+                                From</span>
+                            <span id="team-base" class="block text-lg font-bold text-blick-navy">Bulawayo Head
+                                Office</span>
+                        </div>
+                    </div>
+                    <p id="coverage-note" class="text-sm text-blick-gray leading-relaxed mb-8">
+                        Site visits are scheduled from our Bulawayo office. Choose your area and we will confirm a date
+                        with you &mdash; the fee is agreed up front and deducted once the project is confirmed.
+                    </p>
+                    <button type="button" id="coverage-visit-btn" onclick="inquiry.siteVisit()"
+                        class="w-full bg-blick-navy text-white py-4 rounded-xl font-bold uppercase tracking-widest text-xs hover:bg-blick-deep transition-colors">
+                        Request a Site Visit
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Base -->
+        <section class="mb-32">
+            <div class="text-center max-w-2xl mx-auto mb-16 px-6">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Who We Serve</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-blick-navy leading-tight">Multi-service capacity,
+                    without diluting accountability.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8 flex gap-6">
                     <div
-                        class="bg-white rounded-3xl p-4 md:p-6 shadow-2xl max-w-sm mx-auto lg:ml-auto transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <!-- Chat Header -->
-                        <div class="flex items-center gap-4 border-b border-gray-100 pb-4 mb-4">
-                            <div class="relative">
-                                <div
-                                    class="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center text-white">
-                                    <i data-lucide="bot" class="w-6 h-6"></i>
-                                </div>
-                                <div
-                                    class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-white rounded-full">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="font-bold text-gray-800 text-sm">Just Trade Bot</h5>
-                                <p class="text-xs text-gray-400">Inventory System | Online</p>
-                            </div>
-                        </div>
-
-                        <!-- Chat Messages -->
-                        <div class="space-y-4 text-sm font-medium">
-                            <!-- Bot Message -->
-                            <div class="flex gap-3">
-                                <div class="bg-gray-100 text-gray-600 p-3 rounded-2xl rounded-tl-none max-w-[85%]">
-                                    Hello! Checking stock for Amox 500mg?
-                                </div>
-                            </div>
-
-                            <!-- User Message -->
-                            <div class="flex gap-3 flex-row-reverse">
-                                <div
-                                    class="bg-[#25D366] text-white p-3 rounded-2xl rounded-tr-none max-w-[85%] shadow-md">
-                                    Yes. I need 50 tins.
-                                </div>
-                            </div>
-
-                            <!-- Bot Message -->
-                            <div class="flex gap-3">
-                                <div class="bg-gray-100 text-gray-600 p-3 rounded-2xl rounded-tl-none max-w-[85%]">
-                                    Confirmed. 50 tins reserved. Generating Invoice #INV-902...
-                                </div>
-                            </div>
-
-                            <!-- User Message -->
-                            <div class="flex gap-3 flex-row-reverse">
-                                <div
-                                    class="bg-[#25D366] text-white p-3 rounded-2xl rounded-tr-none max-w-[85%] shadow-md">
-                                    Thanks. Email it to accounts.
-                                </div>
-                            </div>
-
-                            <!-- Bot Typing Indicator -->
-                            <div class="flex gap-2 ml-1">
-                                <div class="w-2 h-2 bg-gray-300 rounded-full animate-bounce"></div>
-                                <div class="w-2 h-2 bg-gray-300 rounded-full animate-bounce delay-100"></div>
-                                <div class="w-2 h-2 bg-gray-300 rounded-full animate-bounce delay-200"></div>
-                            </div>
-                        </div>
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                        <i data-lucide="user" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-blick-navy mb-2">Individuals &amp; Property Owners</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Construction support, property monitoring,
+                            renovations and service coordination.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8 flex gap-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                        <i data-lucide="briefcase" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-blick-navy mb-2">Businesses &amp; Organisations</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Marketing visibility, brand support, premises
+                            support and operational services.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8 flex gap-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                        <i data-lucide="party-popper" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-blick-navy mb-2">Events &amp; Community Projects</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Event support, security assistance,
+                            promotions and local engagement.</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-blick-steel rounded-[2rem] p-8 flex gap-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                        <i data-lucide="hard-hat" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-blick-navy mb-2">Contractors &amp; Developers</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">BOQs, project support, construction execution
+                            and site-related services.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Background Decoration -->
+        <!-- Why Choose / Contact -->
+        <section id="contact" class="bg-blick-deep rounded-[3rem] p-8 md:p-20 text-white relative overflow-hidden scroll-mt-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
+                <div>
+                    <div
+                        class="w-16 h-16 bg-blick-red rounded-2xl flex items-center justify-center mb-8 rotate-3">
+                        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-none">Let's build<br>together.</h2>
+                    <p class="text-white/70 mb-10 text-lg max-w-md">
+                        Professional from enquiry through handover. Send us your project details on WhatsApp and we will
+                        come back with next steps.
+                    </p>
+
+                    <ul class="space-y-3 mb-10 text-sm">
+                        <li class="flex gap-3"><i data-lucide="check"
+                                class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>Quality workmanship on every project
+                        </li>
+                        <li class="flex gap-3"><i data-lucide="check" class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>On-time
+                            delivery</li>
+                        <li class="flex gap-3"><i data-lucide="check"
+                                class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>Registered &amp; contract-based
+                            construction company</li>
+                        <li class="flex gap-3"><i data-lucide="check"
+                                class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>PRAZ registered for Construction &amp;
+                            Civil Works (SC006)</li>
+                        <li class="flex gap-3"><i data-lucide="check"
+                                class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>Professional BOQ preparation and
+                            project registration</li>
+                        <li class="flex gap-3"><i data-lucide="check"
+                                class="w-4 h-4 text-blick-red mt-1 shrink-0"></i>Structured, transparent contracts</li>
+                    </ul>
+
+                    <button type="button" onclick="inquiry.siteVisit()"
+                        class="bg-blick-red hover:bg-blick-darkRed text-white px-10 py-4 rounded-full flex items-center justify-center gap-3 transition-all font-bold text-sm uppercase tracking-widest">
+                        <span>Start on WhatsApp</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Contact card -->
+                <div class="bg-white rounded-[2.5rem] p-8 md:p-10 text-blick-ink">
+                    <img src="assets/images/blickstone-logo.png" alt="BlickStone Private Limited"
+                        class="h-20 w-auto object-contain mb-8" width="728" height="551">
+
+                    <dl class="space-y-6 text-sm">
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Call or WhatsApp"><i data-lucide="phone" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Call
+                                    / WhatsApp</span>
+                                <a href="tel:+263717739949" class="block font-bold text-blick-navy hover:text-blick-red">+263
+                                    71 773 9949</a>
+                                <a href="tel:+263771637326" class="block font-bold text-blick-navy hover:text-blick-red">+263
+                                    771 637 326</a>
+                                <a href="tel:+263882932684" class="block font-bold text-blick-navy hover:text-blick-red">+263
+                                    88 293 2684</a>
+                            </dd>
+                        </div>
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Landline"><i data-lucide="phone-call" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Landline</span>
+                                <a href="tel:+263292276458" class="font-bold text-blick-navy hover:text-blick-red">+263
+                                    292 276 458</a>
+                            </dd>
+                        </div>
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Email"><i data-lucide="mail" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Email</span>
+                                <a href="mailto:construction@blickstone.co.zw"
+                                    class="font-bold text-blick-navy hover:text-blick-red break-all">construction@blickstone.co.zw</a>
+                            </dd>
+                        </div>
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Address"><i data-lucide="map-pin" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Visit
+                                    Us</span>
+                                <p class="font-medium text-blick-ink leading-relaxed">Astra Building Centre, Suite 2B,
+                                    H. Chitepo Street &amp; 9th Avenue, Bulawayo, Zimbabwe</p>
+                            </dd>
+                        </div>
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Website"><i data-lucide="globe" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Web</span>
+                                <span class="font-bold text-blick-navy">www.blickstone.co.zw</span>
+                            </dd>
+                        </div>
+                        <div class="flex gap-4">
+                            <dt class="w-9 h-9 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0"
+                                aria-label="Facebook"><i data-lucide="thumbs-up" class="w-4 h-4"></i></dt>
+                            <dd>
+                                <span
+                                    class="block text-[10px] font-bold uppercase tracking-widest text-blick-gray mb-1">Facebook</span>
+                                <span class="font-bold text-blick-navy">Blickstone Construction Zw</span>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <p class="mt-8 pt-6 border-t border-blick-steel text-xs text-blick-gray">
+                        Registered 18 February 2019 &middot; Reg. No. 379/2019
+                    </p>
+                </div>
+            </div>
+
             <div
-                class="absolute top-[-50%] right-[-20%] w-[1000px] h-[1000px] rounded-full bg-spira-green blur-[150px] opacity-20 pointer-events-none">
+                class="absolute top-[-50%] right-[-20%] w-[900px] h-[900px] rounded-full bg-blick-navy blur-[150px] opacity-40 pointer-events-none">
             </div>
         </section>
 
     </main>
 
-    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-gray-200">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-gray-500">
-            <div class="flex items-center gap-2 font-bold text-spira-black">
-                <div class="w-6 h-6 bg-spira-green rounded-full flex items-center justify-center text-white">
-                    <i data-lucide="leaf" class="w-3 h-3"></i>
-                </div>
-                <span>JUST PHARMACEUTICALS</span>
+    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-blick-steel">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blick-gray">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-7 h-7 object-contain">
+                <span class="font-extrabold"><span class="text-blick-navy">BLICK</span><span
+                        class="text-blick-red">STONE</span></span>
             </div>
 
-            <div class="flex gap-6">
-                <span>Nationwide Delivery</span>
-                <span>Harare • Bulawayo • Gweru • Mutare</span>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                <span>Marketing</span>
+                <span>Construction</span>
+                <span>Sentinel Group</span>
+                <span class="text-blick-navy font-medium">Bulawayo &amp; nationwide</span>
             </div>
 
-            <div class="flex gap-4">
-                <a href="#" class="hover:text-spira-black transiton">Privacy</a>
-                <a href="#" class="hover:text-spira-black transiton">Terms</a>
+            <div class="text-center md:text-right">
+                <span class="block">Built on service. Driven by quality. Focused on trust.</span>
+                <span class="block text-xs mt-1">Reg. No. 379/2019</span>
             </div>
         </div>
     </footer>
 
+    <script src="assets/js/blickstone.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/inquiry-utils.js"></script>
+    <script src="assets/js/hero-typewriter.js"></script>
+    <script src="assets/js/coverage-checker.js"></script>
 </body>
 
 </html>

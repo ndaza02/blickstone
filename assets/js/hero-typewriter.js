@@ -1,21 +1,30 @@
 /**
- * One-time typewriter effect for the hero section
+ * One-time typewriter effect for the hero headline.
+ * Mirrors the brand line: "Built on trust. Delivered with structure."
  */
 document.addEventListener('DOMContentLoaded', () => {
     const elements = [
-        { id: 'type-1', text: 'Just', speed: 100 },
-        { id: 'type-2', text: 'Strategic.', speed: 80, delay: 200 },
-        { id: 'type-3', text: 'Supply.', speed: 120, delay: 300 }
+        { id: 'type-1', text: 'Built on', speed: 90 },
+        { id: 'type-2', text: 'trust.', speed: 90, delay: 150 },
+        { id: 'type-3', text: 'Delivered with structure.', speed: 45, delay: 350 }
     ];
 
-    async function typewriter(el, text, speed) {
-        if (!el) return;
+    // Respect a reduced-motion preference: show the headline immediately.
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        elements.forEach(item => {
+            const el = document.getElementById(item.id);
+            if (el) el.innerText = item.text;
+        });
+        return;
+    }
+
+    function typewriter(el, text, speed) {
         el.innerText = '';
         return new Promise(resolve => {
             let i = 0;
             const type = () => {
                 if (i < text.length) {
-                    el.innerHTML += text.charAt(i);
+                    el.append(text.charAt(i));
                     i++;
                     setTimeout(type, speed);
                 } else {
@@ -29,13 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     async function startEffect() {
         for (const item of elements) {
             const el = document.getElementById(item.id);
-            if (el) {
-                if (item.delay) await new Promise(r => setTimeout(r, item.delay));
-                await typewriter(el, item.text, item.speed);
-            }
+            if (!el) continue;
+            if (item.delay) await new Promise(r => setTimeout(r, item.delay));
+            await typewriter(el, item.text, item.speed);
         }
     }
 
-    // Start the effect after a 0.3s delay
     setTimeout(startEffect, 300);
 });

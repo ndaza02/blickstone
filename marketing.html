@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Division | BlickStone Private Limited</title>
+    <meta name="description"
+        content="BlickStone Marketing supports businesses, brands and organisations in Bulawayo and across Zimbabwe with brand promotion, marketing strategy, social media and content planning, advertising support and client engagement campaigns.">
+
+    <link rel="icon" href="assets/images/blickstone-mark.png" type="image/png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-blick-offWhite text-blick-ink font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3" aria-label="BlickStone Private Limited home">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-10 h-10 object-contain" width="375"
+                    height="335">
+                <span class="font-extrabold text-lg md:text-xl tracking-tight leading-none">
+                    <span class="text-blick-navy">BLICK</span><span class="text-blick-red">STONE</span>
+                    <span class="block text-[9px] font-medium tracking-[0.25em] text-blick-gray mt-0.5">PRIVATE
+                        LIMITED</span>
+                </span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-blick-gray">
+                <a href="index.html" class="hover:text-blick-navy transition">Home</a>
+                <a href="construction.html" class="hover:text-blick-navy transition">Construction</a>
+                <a href="marketing.html" class="text-blick-navy font-bold transition">Marketing</a>
+                <a href="sentinel.html" class="hover:text-blick-navy transition">Sentinel</a>
+                <a href="pricing.html" class="hover:text-blick-navy transition">Pricing</a>
+                <a href="index.html#contact" class="hover:text-blick-navy transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                    class="hidden md:block px-7 py-3 bg-blick-red text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-darkRed transition">
+                    Start a Brief
+                </button>
+                <button type="button" id="nav-toggle" class="p-2 lg:hidden" aria-expanded="false"
+                    aria-controls="nav-mobile" aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6 text-blick-navy"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="nav-mobile"
+            class="hidden lg:hidden mt-6 bg-white rounded-2xl border border-blick-steel p-4 flex flex-col gap-1 text-sm font-medium">
+            <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Home</a>
+            <a href="construction.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Construction</a>
+            <a href="marketing.html" class="px-4 py-3 rounded-xl bg-blick-offWhite text-blick-navy font-bold">Marketing</a>
+            <a href="sentinel.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Sentinel</a>
+            <a href="pricing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Pricing</a>
+            <a href="index.html#contact" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 pb-20">
+
+        <!-- Hero -->
+        <header class="pt-14 mb-28 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <span class="text-blick-blue font-bold tracking-[0.2em] uppercase text-xs mb-5 block">BlickStone
+                    Marketing</span>
+                <h1 class="text-4xl md:text-5xl lg:text-[56px] font-bold text-blick-navy leading-[1.1] mb-8">
+                    Being good at what you&nbsp;do<br>is not the same as<br>being <span
+                        class="text-blick-blue">known</span> for it.
+                </h1>
+                <p class="text-lg text-blick-gray max-w-2xl leading-relaxed mb-6">
+                    BlickStone Marketing supports businesses, brands and organisations with marketing that strengthens
+                    visibility, improves client engagement and builds real market presence.
+                </p>
+                <p class="text-lg text-blick-ink max-w-2xl leading-relaxed font-medium mb-10">
+                    Same company, same standard as our construction and sentinel work: we listen first, agree what we
+                    are actually trying to achieve, then execute it properly.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                        class="bg-blick-navy hover:bg-blick-deep text-white px-9 py-5 rounded-full flex items-center gap-4 transition-all group">
+                        <span class="font-bold text-sm tracking-widest uppercase">Tell Us What You Need</span>
+                        <span
+                            class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </button>
+                    <a href="#services"
+                        class="border border-blick-navy text-blick-navy px-9 py-5 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-blick-navy hover:text-white transition-all">
+                        See the Services
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-blick-deep rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden">
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 rounded-full bg-blick-blue flex items-center justify-center mb-8">
+                            <i data-lucide="megaphone" class="w-7 h-7"></i>
+                        </div>
+                        <h2 class="text-xl font-bold mb-6">What this division is for</h2>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-blue mt-1 shrink-0"></i>
+                                <span>Businesses that are busy doing the work and have no one minding visibility</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-blue mt-1 shrink-0"></i>
+                                <span>Brands that need a campaign run properly rather than posted at random</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-blue mt-1 shrink-0"></i>
+                                <span>Organisations and community projects that need local engagement</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <i data-lucide="check" class="w-4 h-4 text-blick-blue mt-1 shrink-0"></i>
+                                <span>Anyone who wants an agreed scope and a person who answers the phone</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="absolute bottom-[-30%] right-[-20%] w-72 h-72 rounded-full bg-blick-blue blur-[90px] opacity-30 pointer-events-none">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Services -->
+        <section id="services" class="mb-28 scroll-mt-24">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">Five things we do, and do
+                    properly.</h2>
+                <p class="text-blick-gray">We would rather run a short list well than advertise a long one badly. If
+                    what you need sits outside this, say so &mdash; we will tell you honestly whether we are the right
+                    people.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-blue transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-blue">
+                        <i data-lucide="badge-plus" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Brand promotion &amp; awareness campaigns</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Getting your name in front of the
+                        people who should already know it. Campaigns built around a clear objective and a defined
+                        audience, not activity for its own sake.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">MK-001</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Brand promotion &amp; awareness campaigns', 'MK-001', 'Marketing')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-blue transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about brand promotion and awareness campaigns">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-blue transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-blue">
+                        <i data-lucide="compass" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Marketing strategy support</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Working out what you are actually
+                        selling, to whom, and why they should care &mdash; before anyone spends money on getting the
+                        message out.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">MK-002</span>
+                        <button type="button" onclick="inquiry.whatsapp('Marketing strategy support', 'MK-002', 'Marketing')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-blue transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about marketing strategy support">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-blue transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-blue">
+                        <i data-lucide="calendar-days" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Social media marketing &amp; content planning</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">A planned content calendar instead of
+                        posting when someone remembers. We agree the themes, the frequency and who signs off, then keep
+                        it running.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">MK-003</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Social media marketing &amp; content planning', 'MK-003', 'Marketing')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-blue transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about social media marketing and content planning">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-blue transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-blue">
+                        <i data-lucide="tv" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Advertising &amp; promotional support</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Help placing and producing
+                        advertising and promotional material, so the money you put behind it is spent on something
+                        worth seeing.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">MK-004</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Advertising &amp; promotional support', 'MK-004', 'Marketing')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-blue transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about advertising and promotional support">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white border border-blick-steel rounded-[2rem] p-8 flex flex-col hover:border-blick-blue transition-colors">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blick-offWhite flex items-center justify-center mb-7 text-blick-blue">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3 text-blick-navy">Client engagement &amp; visibility campaigns</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed flex-1 mb-6">Staying in front of the customers you
+                        already have, and being visible in the places your next ones are. Particularly useful around
+                        events and community activity.</p>
+                    <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">MK-005</span>
+                        <button type="button"
+                            onclick="inquiry.whatsapp('Client engagement &amp; visibility campaigns', 'MK-005', 'Marketing')"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-blue transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about client engagement and visibility campaigns">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-blick-navy rounded-[2rem] p-8 flex flex-col justify-between text-white">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center mb-7">
+                            <i data-lucide="help-circle" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-3">Not sure which of these you need?</h3>
+                        <p class="text-sm text-white/70 leading-relaxed mb-6">Most people arrive with a problem rather
+                            than a service in mind &mdash; "nobody knows we exist", "we have no time to post". Describe
+                            the problem and we will map it.</p>
+                    </div>
+                    <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                        class="w-full bg-white text-blick-navy py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-offWhite transition-colors">
+                        Describe the Problem
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- How we work -->
+        <section class="mb-28">
+            <div class="max-w-2xl mb-14">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">How We Work</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-5">The same four steps we use
+                    on every assignment.</h2>
+                <p class="text-blick-gray">Marketing goes wrong when nobody agreed what success looked like. This is how
+                    we avoid that.</p>
+            </div>
+
+            <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">01</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Understand the need</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">We listen to you, clarify the requirement and
+                        identify the outcome you are expecting.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">02</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Plan the work</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">We define the scope, resources, timelines and
+                        approach before anything is executed or spent.</p>
+                </li>
+                <li class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-blick-steel mb-4">03</span>
+                    <h3 class="font-bold text-blick-navy mb-2">Execute professionally</h3>
+                    <p class="text-sm text-blick-gray leading-relaxed">The work gets delivered with discipline,
+                        communication and attention to detail.</p>
+                </li>
+                <li class="bg-blick-blue text-white rounded-[2rem] p-7">
+                    <span class="step-number block text-5xl font-extrabold text-white/25 mb-4">04</span>
+                    <h3 class="font-bold mb-2">Review and improve</h3>
+                    <p class="text-sm text-white/85 leading-relaxed">We assess the result, address concerns and adjust.
+                        A campaign nobody reviews is a campaign nobody learns from.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Who it's for -->
+        <section class="mb-28">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Who We
+                        Serve</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight mb-6">Local market, local
+                        understanding.</h2>
+                    <p class="text-blick-gray leading-relaxed">
+                        We work with clients who need dependable execution rather than a pitch deck. Being part of a
+                        multi-service company means we understand what our clients are actually selling &mdash; because
+                        in construction and sentinel work, we sell it ourselves.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                        <div
+                            class="w-11 h-11 rounded-full bg-blick-offWhite flex items-center justify-center mb-5 text-blick-blue">
+                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-blick-navy mb-2">Businesses &amp; organisations</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Marketing visibility, brand support and the
+                            operational side of staying in front of your market.</p>
+                    </div>
+                    <div class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                        <div
+                            class="w-11 h-11 rounded-full bg-blick-offWhite flex items-center justify-center mb-5 text-blick-blue">
+                            <i data-lucide="party-popper" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-blick-navy mb-2">Events &amp; community projects</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Promotions and local engagement &mdash; and
+                            our Sentinel division can cover the security side of the same event.</p>
+                    </div>
+                    <div class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                        <div
+                            class="w-11 h-11 rounded-full bg-blick-offWhite flex items-center justify-center mb-5 text-blick-blue">
+                            <i data-lucide="store" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-blick-navy mb-2">Small &amp; growing businesses</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Owners doing the work themselves, who need
+                            someone to take visibility off their hands without a corporate budget.</p>
+                    </div>
+                    <div class="bg-white border border-blick-steel rounded-[2rem] p-7">
+                        <div
+                            class="w-11 h-11 rounded-full bg-blick-offWhite flex items-center justify-center mb-5 text-blick-blue">
+                            <i data-lucide="hard-hat" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-blick-navy mb-2">Contractors &amp; developers</h3>
+                        <p class="text-sm text-blick-gray leading-relaxed">Trades and developers who win work on
+                            reputation and want that reputation to travel further than word of mouth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="mb-28">
+            <div class="bg-white border border-blick-steel rounded-[2.5rem] p-8 md:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-7">
+                        <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-3 block">What It
+                            Costs</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-blick-navy leading-tight mb-5">Priced against the
+                            brief, not a deposit tier.</h2>
+                        <p class="text-blick-gray leading-relaxed mb-4">
+                            Marketing does not work like construction. There is no Bill of Quantities and no deposit
+                            table, because a one-off promotional push, a campaign and an ongoing retainer are three
+                            completely different shapes of cost.
+                        </p>
+                        <p class="text-blick-ink font-medium leading-relaxed">
+                            So we scope it: you tell us the outcome you need, we tell you what it takes and what it
+                            costs, in writing, before anything starts.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="bg-blick-offWhite rounded-[2rem] p-8">
+                            <ul class="space-y-4 text-sm mb-8">
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i><span>Scope agreed in
+                                        writing before work begins</span></li>
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i><span>One-off, campaign or
+                                        retainer &mdash; whichever suits</span></li>
+                                <li class="flex gap-3"><i data-lucide="check"
+                                        class="w-4 h-4 text-blick-blue mt-0.5 shrink-0"></i><span>No obligation to
+                                        proceed after a quote</span></li>
+                            </ul>
+                            <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                                class="w-full bg-blick-navy text-white py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-deep transition-colors">
+                                Get a Marketing Quote
+                            </button>
+                            <a href="pricing.html"
+                                class="mt-3 block text-center text-xs font-bold uppercase tracking-widest text-blick-navy hover:text-blick-red transition-colors">
+                                How we price across the company
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other divisions -->
+        <section class="mb-28">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">One Company</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight">Three divisions, one
+                    standard.</h2>
+                <p class="text-blick-gray mt-4">Marketing is one of three. Clients often use more than one &mdash; a
+                    promotion and the event security to go with it, or a build and the campaign that fills it.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <a href="construction.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-red transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-red shrink-0">
+                            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Construction</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Residential, commercial, institutional and
+                        industrial construction and project management &mdash; 11 services, priced from a BOQ.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-red transition-colors inline-flex items-center gap-2">
+                        Visit Construction <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="sentinel.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-navy transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Sentinel Group</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Security and protection-focused support for
+                        properties, events, business premises and sites.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-red transition-colors inline-flex items-center gap-2">
+                        Visit Sentinel <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-blick-deep rounded-[3rem] p-8 md:p-16 text-white relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl">
+                <div class="w-14 h-14 rounded-2xl bg-blick-blue flex items-center justify-center mb-8 rotate-3">
+                    <i data-lucide="megaphone" class="w-7 h-7"></i>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">Start with the problem,<br>not the
+                    budget.</h2>
+                <p class="text-white/75 text-lg mb-10 leading-relaxed">
+                    Tell us what is not working &mdash; nobody knows you exist, the phone has gone quiet, an event needs
+                    filling. We will tell you what we would do about it and what it would take.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button type="button" onclick="inquiry.division('BlickStone Marketing')"
+                        class="bg-blick-blue hover:bg-blick-navy text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest transition-all inline-flex items-center justify-center gap-3">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        Start on WhatsApp
+                    </button>
+                    <a href="index.html#contact"
+                        class="border border-white/30 text-white px-9 py-4 rounded-full font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-blick-navy transition-all inline-flex items-center justify-center">
+                        All Contact Details
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="absolute top-[-40%] right-[-10%] w-[800px] h-[800px] rounded-full bg-blick-blue blur-[140px] opacity-25 pointer-events-none">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-blick-steel">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blick-gray">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-7 h-7 object-contain">
+                <span class="font-extrabold"><span class="text-blick-navy">BLICK</span><span
+                        class="text-blick-red">STONE</span></span>
+            </a>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                <a href="tel:+263717739949" class="hover:text-blick-navy">+263 71 773 9949</a>
+                <a href="mailto:construction@blickstone.co.zw"
+                    class="hover:text-blick-navy">construction@blickstone.co.zw</a>
+                <span class="text-blick-navy font-medium">Bulawayo &amp; nationwide</span>
+            </div>
+
+            <div class="text-center md:text-right">
+                <span class="block">Built on service. Driven by quality. Focused on trust.</span>
+                <span class="block text-xs mt-1">Reg. No. 379/2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/blickstone.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inquiry-utils.js"></script>
+</body>
+
+</html>

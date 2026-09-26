@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | BlickStone Private Limited</title>
+    <meta name="description"
+        content="A complete construction and project management offering from BlickStone Private Limited, plus marketing and sentinel services. PRAZ registered for Construction &amp; Civil Works. Build your project brief and get a professional BOQ.">
+
+    <link rel="icon" href="assets/images/blickstone-mark.png" type="image/png">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .tab-active {
+            background-color: #0B2F6B;
+            color: white;
+        }
+
+        .tab-inactive {
+            background-color: transparent;
+            color: #6F7378;
+        }
+    </style>
+</head>
+
+<body class="bg-blick-offWhite text-blick-ink font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="max-w-[1440px] mx-auto px-6 md:px-12 pt-8">
+        <nav class="flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3" aria-label="BlickStone Private Limited home">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-10 h-10 object-contain" width="375"
+                    height="335">
+                <span class="font-extrabold text-lg md:text-xl tracking-tight leading-none">
+                    <span class="text-blick-navy">BLICK</span><span class="text-blick-red">STONE</span>
+                    <span class="block text-[9px] font-medium tracking-[0.25em] text-blick-gray mt-0.5">PRIVATE
+                        LIMITED</span>
+                </span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-medium text-blick-gray">
+                <a href="index.html" class="hover:text-blick-navy transition">Home</a>
+                <a href="construction.html" class="text-blick-navy font-bold transition">Construction</a>
+                <a href="marketing.html" class="hover:text-blick-navy transition">Marketing</a>
+                <a href="sentinel.html" class="hover:text-blick-navy transition">Sentinel</a>
+                <a href="pricing.html" class="hover:text-blick-navy transition">Pricing</a>
+                <a href="index.html#contact" class="hover:text-blick-navy transition">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="brief.openPanel()"
+                    class="hidden md:flex items-center gap-2 px-7 py-3 bg-blick-red text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blick-darkRed transition">
+                    <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+                    My Brief
+                </button>
+                <button type="button" id="nav-toggle" class="p-2 lg:hidden" aria-expanded="false" aria-controls="nav-mobile"
+                    aria-label="Toggle navigation">
+                    <i data-lucide="menu" class="w-6 h-6 text-blick-navy"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="nav-mobile"
+            class="hidden lg:hidden mt-6 bg-white rounded-2xl border border-blick-steel p-4 flex flex-col gap-1 text-sm font-medium">
+            <a href="index.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Home</a>
+            <a href="construction.html" class="px-4 py-3 rounded-xl bg-blick-offWhite text-blick-navy font-bold">Construction</a>
+            <a href="marketing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Marketing</a>
+            <a href="sentinel.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Sentinel</a>
+            <a href="pricing.html" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Pricing</a>
+            <a href="index.html#contact" class="px-4 py-3 rounded-xl hover:bg-blick-offWhite">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-[1440px] mx-auto px-6 md:px-12 pb-20">
+
+        <!-- Page Header -->
+        <header class="text-center mb-16 pt-14">
+            <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-5 block">Construction
+                Division</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-8 text-blick-navy leading-tight">A complete construction &amp;
+                project management offering</h1>
+            <p class="text-lg text-blick-gray max-w-2xl mx-auto mb-4">
+                Residential, commercial, institutional and industrial. Add the services you need to your project brief
+                and we will cost the whole scope as one Bill of Quantities.
+            </p>
+            <p class="text-xs text-blick-gray max-w-2xl mx-auto mb-8 uppercase tracking-widest font-bold">
+                Priced from a professional BOQ &mdash; not a price list
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-12 text-sm font-bold">
+                <a href="index.html#our-work"
+                    class="text-blick-navy hover:text-blick-red transition-colors inline-flex items-center gap-2 group">
+                    <i data-lucide="camera" class="w-4 h-4"></i>
+                    See our crews on site
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="pricing.html"
+                    class="text-blick-navy hover:text-blick-red transition-colors inline-flex items-center gap-2 group">
+                    <i data-lucide="receipt-text" class="w-4 h-4"></i>
+                    How we price
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Tabs -->
+            <div id="catalog" class="inline-flex flex-wrap justify-center gap-1.5 bg-white border border-blick-steel rounded-full p-1.5 scroll-mt-24"
+                role="tablist" aria-label="Construction service categories">
+                <button type="button" id="btn-build" role="tab" aria-selected="true" aria-controls="section-build"
+                    class="px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all tab-active"
+                    onclick="switchTab('build')">
+                    Build &amp; Finish
+                </button>
+                <button type="button" id="btn-structural" role="tab" aria-selected="false" aria-controls="section-structural"
+                    class="px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all tab-inactive"
+                    onclick="switchTab('structural')">
+                    Structural &amp; External
+                </button>
+                <button type="button" id="btn-professional" role="tab" aria-selected="false" aria-controls="section-professional"
+                    class="px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider transition-all tab-inactive"
+                    onclick="switchTab('professional')">
+                    Professional Services
+                </button>
+            </div>
+        </header>
+
+        <!-- Build & Finish -->
+        <section id="section-build" role="tabpanel" aria-labelledby="btn-build"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden bg-blick-deep">
+                    <img src="assets/images/site-walling-wide.jpg" alt="BlickStone bricklayers building brick walls on a commercial project"
+                        class="w-full h-full object-cover object-top" loading="lazy" width="825" height="1100">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Residential &amp; Commercial Construction</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Building modern, comfortable, sustainable homes and
+                    commercial buildings that add value to your investment.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-001</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Residential &amp; Commercial Construction', 'CN-001')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Residential and Commercial Construction on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button"
+                            onclick="brief.addItem({id: 'cn-001', name: 'Residential & Commercial Construction', icon: 'building-2'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Residential and Commercial Construction to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border-2 border-blick-red flex flex-col relative">
+                <span
+                    class="absolute -top-3 left-7 bg-blick-red text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Most
+                    requested</span>
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden">
+                    <img src="assets/images/site-shell-timbers.jpg"
+                        alt="Roof timbers being set onto a brick shell that had stood unfinished"
+                        class="w-full h-full object-cover" loading="lazy" width="762" height="1016">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Incomplete Houses &mdash; Finish &amp; Upgrade</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">We help you complete, upgrade and improve unfinished or
+                    stalled projects professionally, start to finish.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-002</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Incomplete Houses — Finish &amp; Upgrade', 'CN-002')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about finishing an incomplete house on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button"
+                            onclick="brief.addItem({id: 'cn-002', name: 'Incomplete Houses — Finish & Upgrade', icon: 'home'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add finishing an incomplete house to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden bg-blick-deep">
+                    <img src="assets/images/site-roof-timbers.jpg" alt="A timber roof structure being fixed over brickwork by a BlickStone crew"
+                        class="w-full h-full object-cover" loading="lazy" width="825" height="1100">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Roofing &amp; Ceilings</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Strong, durable, weather-resistant roofing solutions,
+                    including IBR roofing, with ceilings to match.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-003</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Roofing &amp; Ceilings', 'CN-003')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Roofing and Ceilings on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-003', name: 'Roofing & Ceilings', icon: 'triangle'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Roofing and Ceilings to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy">
+                    <i data-lucide="grid-2x2" class="w-16 h-16"></i>
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Tiling &amp; Finishes</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Quality tiling, plastering, flooring and finishing
+                    support for a perfect look and feel.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-004</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Tiling &amp; Finishes', 'CN-004')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Tiling and Finishes on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-004', name: 'Tiling & Finishes', icon: 'grid-2x2'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Tiling and Finishes to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy">
+                    <i data-lucide="expand" class="w-16 h-16"></i>
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Renovations &amp; Extensions</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Transforming old or unsuitable spaces into modern,
+                    valuable, comfortable assets.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-005</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Renovations &amp; Extensions', 'CN-005')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Renovations and Extensions on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-005', name: 'Renovations & Extensions', icon: 'expand'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Renovations and Extensions to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Payment plan prompt -->
+            <article class="bg-blick-deep p-7 rounded-[2rem] text-white flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-full bg-blick-red flex items-center justify-center mb-6">
+                        <i data-lucide="calendar-clock" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="font-bold text-lg mb-2">Build now. Pay comfortably.</h2>
+                    <p class="text-sm text-white/70 mb-6">Deposits are tiered by project size &mdash; from 50% on small
+                        jobs down to 30% on large projects, with the balance over 12&ndash;24 months linked to
+                        progress.</p>
+                </div>
+                <a href="pricing.html"
+                    class="bg-white text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center hover:bg-blick-offWhite transition-colors">
+                    See Pricing &amp; Plans
+                </a>
+            </article>
+        </section>
+
+        <!-- Structural & External -->
+        <section id="section-structural" role="tabpanel" aria-labelledby="btn-structural"
+            class="hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden bg-blick-deep">
+                    <img src="assets/images/site-boundary-wall.jpg" alt="A brick perimeter wall built by BlickStone with a vented top course"
+                        class="w-full h-full object-cover" loading="lazy" width="762" height="1016">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Durawalls &amp; External Works</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Secure your property with perimeter walls, durawall
+                    construction, plastering and paving.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-red">30% deposit</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Durawalls &amp; External Works', 'CN-006')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Durawalls and External Works on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-006', name: 'Durawalls & External Works', icon: 'fence'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Durawalls and External Works to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden bg-blick-deep">
+                    <img src="assets/images/site-civil-trench.jpg" alt="A BlickStone worker excavating a service trench beside a house"
+                        class="w-full h-full object-cover" loading="lazy" width="825" height="1100">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Civil Works</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Roads, drainage, foundations and other civil engineering
+                    works.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-007</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Civil Works', 'CN-007')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Civil Works on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-007', name: 'Civil Works', icon: 'route'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Civil Works to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy">
+                    <i data-lucide="droplets" class="w-16 h-16"></i>
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Water Storage Solutions</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Supply and installation of water storage tanks and
+                    related infrastructure.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-008</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Water Storage Solutions', 'CN-008')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Water Storage Solutions on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-008', name: 'Water Storage Solutions', icon: 'droplets'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Water Storage Solutions to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy">
+                    <i data-lucide="wrench" class="w-16 h-16"></i>
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Building Maintenance</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Reliable maintenance services that protect your
+                    investment long after handover.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-009</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Building Maintenance', 'CN-009')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Building Maintenance on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-009', name: 'Building Maintenance', icon: 'wrench'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Building Maintenance to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Professional Services -->
+        <section id="section-professional" role="tabpanel" aria-labelledby="btn-professional"
+            class="hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 bg-blick-offWhite rounded-3xl mb-6 flex items-center justify-center text-blick-navy">
+                    <i data-lucide="ruler" class="w-16 h-16"></i>
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Quantity Surveying &amp; BOQs</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">Accurate estimates and cost control for successful,
+                    well-planned projects &mdash; including BOQs, quotations and project planning support.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-010</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Quantity Surveying &amp; BOQs', 'CN-010')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Quantity Surveying and BOQs on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-010', name: 'Quantity Surveying & BOQs', icon: 'ruler'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Quantity Surveying and BOQs to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white p-7 rounded-[2rem] border border-blick-steel hover:border-blick-navy transition-all flex flex-col">
+                <div class="h-44 rounded-3xl mb-6 overflow-hidden bg-blick-deep">
+                    <img src="assets/images/site-bricklayer.jpg"
+                        alt="A BlickStone bricklayer checking brickwork against a spirit level during a progress inspection"
+                        class="w-full h-full object-cover" loading="lazy" width="825" height="1100">
+                </div>
+                <h2 class="font-bold text-lg mb-2 text-blick-navy">Project Management</h2>
+                <p class="text-sm text-blick-gray mb-6 flex-1">End-to-end management from planning and scheduling
+                    through to handover, with progress inspections at every stage.</p>
+                <div class="flex items-center justify-between pt-5 border-t border-blick-steel">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-blick-gray">CN-011</span>
+                    <div class="flex gap-2">
+                        <button type="button" onclick="inquiry.whatsapp('Project Management', 'CN-011')"
+                            class="w-10 h-10 bg-blick-red text-white rounded-full flex items-center justify-center hover:bg-blick-darkRed transition-all hover:scale-110"
+                            title="Enquire on WhatsApp" aria-label="Enquire about Project Management on WhatsApp">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                        </button>
+                        <button type="button" onclick="brief.addItem({id: 'cn-011', name: 'Project Management', icon: 'clipboard-check'})"
+                            class="w-10 h-10 bg-blick-navy text-white rounded-full flex items-center justify-center hover:bg-blick-deep transition-all hover:scale-110"
+                            title="Add to project brief" aria-label="Add Project Management to project brief">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-blick-navy p-7 rounded-[2rem] text-white flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-full bg-white/15 flex items-center justify-center mb-6">
+                        <i data-lucide="file-signature" class="w-6 h-6"></i>
+                    </div>
+                    <h2 class="font-bold text-lg mb-2">Registered &amp; contract-based</h2>
+                    <p class="text-sm text-white/70 mb-4">Reg. No. 379/2019. Every project runs on a structured
+                        agreement with professional BOQ preparation and project registration.</p>
+                    <p class="text-sm text-white/70 mb-6">PRAZ registered under category SC006 &mdash; Construction
+                        and Civil Works &mdash; so we can be engaged on public procurement projects.</p>
+                </div>
+                <a href="index.html#how-we-work"
+                    class="bg-white text-blick-navy py-3 rounded-full text-xs font-bold uppercase tracking-widest text-center hover:bg-blick-offWhite transition-colors">
+                    See Our Process
+                </a>
+            </article>
+        </section>
+
+        <!-- Other Divisions -->
+        <section class="border-t border-blick-steel pt-20">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-blick-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">One Company</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-blick-navy leading-tight">Three divisions, one
+                    standard.</h2>
+                <p class="text-blick-gray mt-4">Construction is one of three. Clients often use more than one &mdash; a
+                    build and the site cover to go with it, or a new premises and the campaign that fills it.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <a href="marketing.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-blue transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-blue shrink-0">
+                            <i data-lucide="megaphone" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Marketing</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Brand promotion, strategy support, social
+                        media and content planning, advertising and client engagement campaigns.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-blue transition-colors inline-flex items-center gap-2">
+                        Visit Marketing <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+
+                <a href="sentinel.html"
+                    class="bg-white border border-blick-steel rounded-[2rem] p-8 hover:border-blick-navy transition-colors group block">
+                    <div class="flex items-center gap-4 mb-5">
+                        <div
+                            class="w-12 h-12 rounded-full bg-blick-offWhite flex items-center justify-center text-blick-navy shrink-0">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-blick-navy">Sentinel Group</h3>
+                    </div>
+                    <p class="text-sm text-blick-gray leading-relaxed mb-5">Security and protection-focused support for
+                        properties, events, business premises and sites &mdash; including cover on active builds.</p>
+                    <span
+                        class="text-xs font-bold uppercase tracking-widest text-blick-navy group-hover:text-blick-red transition-colors inline-flex items-center gap-2">
+                        Visit Sentinel <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-[1440px] mx-auto px-6 md:px-12 py-12 border-t border-blick-steel">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blick-gray">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/images/blickstone-mark.png" alt="" class="w-7 h-7 object-contain">
+                <span class="font-extrabold"><span class="text-blick-navy">BLICK</span><span
+                        class="text-blick-red">STONE</span></span>
+            </a>
+
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+                <a href="tel:+263717739949" class="hover:text-blick-navy">+263 71 773 9949</a>
+                <a href="mailto:construction@blickstone.co.zw" class="hover:text-blick-navy">construction@blickstone.co.zw</a>
+                <span class="text-blick-navy font-medium">Bulawayo &amp; nationwide</span>
+            </div>
+
+            <div class="text-center md:text-right">
+                <span class="block">Built on service. Driven by quality. Focused on trust.</span>
+                <span class="block text-xs mt-1">Reg. No. 379/2019</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/blickstone.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/inquiry-utils.js"></script>
+    <script src="assets/js/project-brief.js"></script>
+    <script>
+        const SERVICE_TABS = ['build', 'structural', 'professional'];
+
+        function switchTab(tab, scroll = false) {
+            if (!SERVICE_TABS.includes(tab)) return;
+
+            SERVICE_TABS.forEach(t => {
+                const btn = document.getElementById(`btn-${t}`);
+                const section = document.getElementById(`section-${t}`);
+                const active = t === tab;
+
+                btn.classList.toggle('tab-active', active);
+                btn.classList.toggle('tab-inactive', !active);
+                btn.setAttribute('aria-selected', String(active));
+                section.classList.toggle('hidden', !active);
+                section.classList.toggle('grid', active);
+            });
+
+            if (scroll) document.getElementById('catalog').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Deep links such as construction.html#structural open the matching tab.
+        function applyHash() {
+            const tab = location.hash.replace('#', '');
+            if (SERVICE_TABS.includes(tab)) switchTab(tab, true);
+        }
+
+        applyHash();
+        window.addEventListener('hashchange', applyHash);
+    </script>
+</body>
+
+</html>
